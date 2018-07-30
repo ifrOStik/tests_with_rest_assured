@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>restassure</groupId>
+    <artifactId>restassure</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>2.12.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <!-- use version 2.1.0 or higher -->
+            <version>3.10.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-assertions-generator-maven-plugin</artifactId>
+                <version>2.1.0</version>
+
+                <!-- Generate assertions at every build -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate-assertions</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+
+                <!-- List the package of classes you want to generate assertions for -->
+                <classes>
+                    <param>io.swagger.petstore.models.pet.PetFailResponse</param>
+                </classes>
+                    <hierarchical>true</hierarchical>
+                    <targetDir>src/main/java</targetDir>
+                    <generateAssertionsInPackage>io.swagger.petstore.assertions.pet</generateAssertionsInPackage>
+                    <generateAssertions>true</generateAssertions>
+                    <generateBddAssertions>false</generateBddAssertions>
+                    <generateSoftAssertions>false</generateSoftAssertions>
+                    <generateJUnitSoftAssertions>false</generateJUnitSoftAssertions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

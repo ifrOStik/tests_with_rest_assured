@@ -1,0 +1,16 @@
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/controllers/pet/PetController.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/models/pet/PetNotFoundModel.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/utils/OrderStatus.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetModelAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/models/pet/PetModel.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/utils/PetStatus.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/PetModelAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/AbstractTagsItemAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/TagsItemAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/PetNotFoundModelAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/AbstractCategoryAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/assertions/pet/CategoryAssert.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/utils/StaticData.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/models/pet/TagsItem.java
+/Users/temaustimcik/Desktop/restJob/src/main/java/io/swagger/petstore/models/pet/Category.java
