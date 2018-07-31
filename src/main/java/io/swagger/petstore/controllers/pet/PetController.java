@@ -28,6 +28,15 @@ public class PetController {
 
     }
 
+    public PetController() {
+        requestSpecification = new RequestSpecBuilder()
+                .setBaseUri(StaticData.BASE_URI)
+                .setBasePath(StaticData.PatPath)
+                .setContentType(ContentType.JSON)
+                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .log(LogDetail.ALL).build();
+    }
+
     public PetModel addNewPet() {
          return given(requestSpecification)
                  .body(pet)
@@ -94,11 +103,26 @@ public class PetController {
                         " \"name\": \"testName\",\n" +
                         " \"photoUrls\": [4234234],\n" +
                         " \"tags\": [],\n" +
-                        //" \"status\": \"pending\"\n" +
                         "}")
                 .post()
                 .then()
                 .statusCode(400)
+                .contentType(ContentType.JSON)
+                .and().extract().response().as(PetFailResponse.class);
+    }
+
+    public PetFailResponse serverErrorRequest() {
+        return given(requestSpecification)
+                .body("{\n" +
+                        " \"id\": " + 1111 + ",\n" +
+                        " \"name\": \"testName\",\n" +
+                        " \"photoUrls\": [4234234],\n" +
+                        " \"tags\": [234234],\n" +
+                        " \"status\": \"pending\"\n" +
+                        "}")
+                .post()
+                .then()
+                .statusCode(500)
                 .contentType(ContentType.JSON)
                 .and().extract().response().as(PetFailResponse.class);
     }

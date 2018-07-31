@@ -5,16 +5,16 @@ import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.pet.PetFailResponse;
 import org.junit.Test;
 
-public class BadRequestAddPetTest {
+public class ServerErrorTest {
 
     @Test
-    public void badRequestTest() {
+    public void serverErrorTest() {
 
-        PetFailResponse request = new  PetController().badRequest();
+        PetFailResponse request = new PetController().serverErrorRequest();
 
         PetFailResponseAssert.assertThat(request)
-                .hasCode(400)
-                .hasMessage("bad input")
+                .hasCode(500)
+                .hasMessage("something bad happened")
                 .hasType("unknown");
     }
 }
