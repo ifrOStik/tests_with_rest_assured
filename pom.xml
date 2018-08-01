@@ -7,6 +7,12 @@
     <groupId>restassure</groupId>
     <artifactId>restassure</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -60,7 +66,7 @@
 
                 <!-- List the package of classes you want to generate assertions for -->
                     <classes>
-                        <param>io.swagger.petstore.models.user.UserModel</param>
+                        <param></param>
                     </classes>
 
                     <hierarchical>true</hierarchical>
