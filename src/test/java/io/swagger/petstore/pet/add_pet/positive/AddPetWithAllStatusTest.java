@@ -5,11 +5,8 @@ import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.pet.PetDataGenerator;
 import io.swagger.petstore.utils.PetStatus;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.RandomUtils;
 import org.junit.Test;
 
-import java.util.ArrayList;
 
 public class AddPetWithAllStatusTest extends PetDataGenerator {
 

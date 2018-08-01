@@ -2,7 +2,6 @@ package io.swagger.petstore.models.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
-import java.util.Objects;
 
 @Generated("com.robohorse.robopojogenerator")
 public class UserModel{
@@ -114,17 +113,20 @@ public class UserModel{
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
-		UserModel userModel = (UserModel) o;
-		return userStatus == userModel.userStatus &&
-				id == userModel.id &&
-				Objects.equals(firstName, userModel.firstName) &&
-				Objects.equals(lastName, userModel.lastName) &&
-				Objects.equals(password, userModel.password) &&
-				Objects.equals(phone, userModel.phone) &&
-				Objects.equals(email, userModel.email) &&
-				Objects.equals(username, userModel.username);
-	}
 
+		UserModel userModel = (UserModel) o;
+
+		if (userStatus != userModel.userStatus) return false;
+		if (id != userModel.id) return false;
+		if (firstName != null ? !firstName.equals(userModel.firstName) : userModel.firstName != null) return false;
+		if (lastName != null ? !lastName.equals(userModel.lastName) : userModel.lastName != null) return false;
+		if (password != null ? !password.equals(userModel.password) : userModel.password != null) return false;
+		if (phone != null ? !phone.equals(userModel.phone) : userModel.phone != null) return false;
+		if (email != null ? !email.equals(userModel.email) : userModel.email != null) return false;
+		if (username != null ? !username.equals(userModel.username) : userModel.username != null) return false;
+
+		return true;
+	}
 
 	@Override
  	public String toString(){

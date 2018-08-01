@@ -3,6 +3,7 @@ package io.swagger.petstore.utils;
 /**
  * Created by temaustimcik on 2018-07-24.
  */
+
 public class StaticData {
 
     public static String BASE_URI = "http://petstore.swagger.io";
