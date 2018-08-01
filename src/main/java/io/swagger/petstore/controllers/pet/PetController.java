@@ -25,7 +25,6 @@ public class PetController {
                 .log(LogDetail.ALL).build();
 
         this.pet = pet;
-
     }
 
     public PetController() {

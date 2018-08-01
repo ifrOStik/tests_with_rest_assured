@@ -2,6 +2,7 @@ package io.swagger.petstore.models.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
+import java.util.Objects;
 
 @Generated("com.robohorse.robopojogenerator")
 public class UserModel{
@@ -108,6 +109,22 @@ public class UserModel{
 		this.email = email;
 		this.username = username;
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		UserModel userModel = (UserModel) o;
+		return userStatus == userModel.userStatus &&
+				id == userModel.id &&
+				Objects.equals(firstName, userModel.firstName) &&
+				Objects.equals(lastName, userModel.lastName) &&
+				Objects.equals(password, userModel.password) &&
+				Objects.equals(phone, userModel.phone) &&
+				Objects.equals(email, userModel.email) &&
+				Objects.equals(username, userModel.username);
+	}
+
 
 	@Override
  	public String toString(){
