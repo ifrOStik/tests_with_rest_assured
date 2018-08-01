@@ -59,9 +59,6 @@
                 <configuration>
 
                 <!-- List the package of classes you want to generate assertions for -->
-                <classes>
-                    <param>io.swagger.petstore.models.pet.PetFailResponse</param>
-                </classes>
                     <hierarchical>true</hierarchical>
                     <targetDir>src/main/java</targetDir>
                     <generateAssertionsInPackage>io.swagger.petstore.assertions.pet</generateAssertionsInPackage>

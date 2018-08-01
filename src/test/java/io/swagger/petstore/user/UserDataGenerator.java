@@ -27,7 +27,7 @@ public class UserDataGenerator {
     }
 
     public String generatePhone() {
-        return "user_phone_" + RandomStringUtils.randomAlphanumeric(6);
+        return "user_phone_" + RandomStringUtils.randomNumeric(9);
     }
 
     public String generatePassword() {
