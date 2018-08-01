@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.utils.StaticData;
 
+
 import static io.restassured.RestAssured.given;
 
 public class UserController {
@@ -34,6 +35,26 @@ public class UserController {
                 .log(LogDetail.ALL).build();
     }
 
+    public void addUsersList() {
+        given(requestSpecification)
+                .body(user)
+                .when()
+                .post()
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON);
+    }
+
+    public void addUsersArray() {
+        given(requestSpecification)
+                .body(user)
+                .when()
+                .post()
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON);
+    }
+
     public void addUser() {
         given(requestSpecification)
                 .body(user)
@@ -52,5 +73,24 @@ public class UserController {
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .and().extract().response().as(UserModel.class);
+    }
+
+    public void updateUser() {
+        given(requestSpecification)
+                .body(user)
+                .when()
+                .put(user.getUsername())
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON);
+    }
+
+    public void deleteUser() {
+        given(requestSpecification)
+                .when()
+                .delete(user.getUsername())
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON);
     }
 }

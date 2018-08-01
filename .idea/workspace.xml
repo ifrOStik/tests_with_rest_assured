@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e3b3619-fd1a-4b5b-b7f2-8c5b6beb35f5" name="Default" comment="add new class AddUser and GetUser">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/UserDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/user/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/user/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/users/UserDataGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/FirstTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="DeletePetTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+            <state relative-caret-position="150">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -42,20 +39,57 @@
       <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/user/UserModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="1295">
               <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="257">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDataGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/UserDataGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+                <element signature="e#789#790#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#1136#1137#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddUserTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -88,10 +122,11 @@
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/users/add_user/AddUserTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/get_user/GetUserTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/user/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/UserDataGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java" />
       </list>
     </option>
@@ -183,25 +218,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="petstore" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="petstore" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="petstore" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,6 +241,25 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="petstore" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="add_user" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -246,11 +281,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GetNotFondPetTest.getNotFoundPet">
+  <component name="RunManager" selected="JUnit.AddUserTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="AddUserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
@@ -262,7 +297,76 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
       <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUserTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AddUserTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.user.add_user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUserTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AddUserTest.addUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.user.add_user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUserTest" />
+      <option name="METHOD_NAME" value="addUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="DeletePetTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.pet.delete_pet.positive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.delete_pet.positive" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.delete_pet.positive.DeletePetTest" />
+      <option name="METHOD_NAME" value="deleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -286,29 +390,6 @@
       <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.get_pet.negative" />
       <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.get_pet.negative.GetNotFondPetTest" />
       <option name="METHOD_NAME" value="getNotFoundPet" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ServerErrorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restassure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.add_pet.negative.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.add_pet.negative" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.add_pet.negative.ServerErrorTest" />
-      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -358,17 +439,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ServerErrorTest.test" />
       <item itemvalue="JUnit.GetNotFondPetTest.getNotFoundPet" />
-      <item itemvalue="JUnit.AddUserTest.test" />
+      <item itemvalue="JUnit.AddUserTest.addUser" />
+      <item itemvalue="JUnit.DeletePetTest.deleteTest" />
+      <item itemvalue="JUnit.AddUserTest.addUserTest" />
+      <item itemvalue="JUnit.AddUserTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddUserTest" />
+        <item itemvalue="JUnit.AddUserTest.addUser" />
+        <item itemvalue="JUnit.AddUserTest.addUserTest" />
+        <item itemvalue="JUnit.DeletePetTest.deleteTest" />
         <item itemvalue="JUnit.GetNotFondPetTest.getNotFoundPet" />
-        <item itemvalue="JUnit.ServerErrorTest.test" />
-        <item itemvalue="JUnit.AddUserTest.test" />
-        <item itemvalue="JUnit.GetNotFondPetTest.getNotFoundPet" />
-        <item itemvalue="JUnit.ServerErrorTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -436,29 +519,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ServerErrorTest_test - 2018.07.31 at 11h 54m 13s.xml">
-      <configuration name="ServerErrorTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServerErrorTest_test - 2018.07.31 at 11h 54m 40s.xml">
-      <configuration name="ServerErrorTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GetNotFondPetTest_getNotFoundPet - 2018.07.31 at 11h 55m 20s.xml">
-      <configuration name="GetNotFondPetTest.getNotFoundPet" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddUserTest_test - 2018.07.31 at 22h 25m 54s.xml">
-      <configuration name="AddUserTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddUserTest_test - 2018.07.31 at 22h 26m 25s.xml">
-      <configuration name="AddUserTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddUserTest_test - 2018.07.31 at 22h 26m 50s.xml">
-      <configuration name="AddUserTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddUserTest_test - 2018.07.31 at 22h 54m 51s.xml">
-      <configuration name="AddUserTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AddUserTest_test - 2018.07.31 at 22h 56m 27s.xml">
       <configuration name="AddUserTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest_addUser - 2018.08.01 at 12h 08m 39s.xml">
+      <configuration name="AddUserTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest_addUser - 2018.08.01 at 12h 08m 53s.xml">
+      <configuration name="AddUserTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DeletePetTest_deleteTest - 2018.08.01 at 12h 09m 37s.xml">
+      <configuration name="DeletePetTest.deleteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest_addUser - 2018.08.01 at 12h 10m 00s.xml">
+      <configuration name="AddUserTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest_addUserTest - 2018.08.01 at 12h 10m 37s.xml">
+      <configuration name="AddUserTest.addUserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest - 2018.08.01 at 12h 11m 31s.xml">
+      <configuration name="AddUserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest_addUser - 2018.08.01 at 12h 12m 57s.xml">
+      <configuration name="AddUserTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest - 2018.08.01 at 12h 13m 06s.xml">
+      <configuration name="AddUserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUserTest - 2018.08.01 at 12h 14m 19s.xml">
+      <configuration name="AddUserTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -473,12 +562,12 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3287483" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287483" />
       <window_info anchor="bottom" id="Version Control" weight="0.3287483" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -585,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/PetDataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="37" column="64" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -606,16 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/PetFailResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -623,24 +695,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/PetDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/user/UserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="71" lean-forward="true" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="71" />
+        <state relative-caret-position="104">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -651,13 +715,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/UserDataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="42" column="46" lean-forward="true" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/user/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1295">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="257">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
         </state>
       </provider>
     </entry>
