@@ -6,7 +6,7 @@ import io.swagger.petstore.user.UserDataGenerator;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AddUserTest extends UserDataGenerator {
+public class AddUsersTest extends UserDataGenerator {
 
     @Test
     public void addUser() {

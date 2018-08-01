@@ -281,11 +281,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddUserTest">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="AddUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddUsersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
@@ -296,7 +296,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUserTest" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUsersTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -308,7 +308,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="AddUserTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddUsersTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
@@ -319,7 +319,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUserTest" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUsersTest" />
       <option name="METHOD_NAME" value="addUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -331,7 +331,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="AddUserTest.addUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddUsersTest.addUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
@@ -342,8 +342,31 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUserTest" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUsersTest" />
       <option name="METHOD_NAME" value="addUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AddUsersTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.user.add_user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUsersTest" />
+      <option name="METHOD_NAME" value="deleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -367,29 +390,6 @@
       <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.delete_pet.positive" />
       <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.delete_pet.positive.DeletePetTest" />
       <option name="METHOD_NAME" value="deleteTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GetNotFondPetTest.getNotFoundPet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restassure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.get_pet.negative.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.get_pet.negative" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.get_pet.negative.GetNotFondPetTest" />
-      <option name="METHOD_NAME" value="getNotFoundPet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -439,19 +439,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.GetNotFondPetTest.getNotFoundPet" />
-      <item itemvalue="JUnit.AddUserTest.addUser" />
+      <item itemvalue="JUnit.AddUsersTest.addUser" />
       <item itemvalue="JUnit.DeletePetTest.deleteTest" />
-      <item itemvalue="JUnit.AddUserTest.addUserTest" />
-      <item itemvalue="JUnit.AddUserTest" />
+      <item itemvalue="JUnit.AddUsersTest.addUserTest" />
+      <item itemvalue="JUnit.AddUsersTest" />
+      <item itemvalue="JUnit.AddUsersTest.deleteTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddUserTest" />
-        <item itemvalue="JUnit.AddUserTest.addUser" />
-        <item itemvalue="JUnit.AddUserTest.addUserTest" />
+        <item itemvalue="JUnit.AddUsersTest.addUser" />
+        <item itemvalue="JUnit.AddUsersTest.deleteTest" />
+        <item itemvalue="JUnit.AddUsersTest" />
+        <item itemvalue="JUnit.AddUsersTest.addUserTest" />
         <item itemvalue="JUnit.DeletePetTest.deleteTest" />
-        <item itemvalue="JUnit.GetNotFondPetTest.getNotFoundPet" />
       </list>
     </recent_temporary>
   </component>
