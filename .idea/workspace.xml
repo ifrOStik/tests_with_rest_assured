@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0182601d-26d1-435e-8f35-ec180d9996f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/user/AbstractUserModelAssert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/user/UserModelAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
               <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddUsersTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -60,6 +65,7 @@
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/user/UserModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java" />
       </list>
     </option>
   </component>
@@ -222,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddUsersTest.addUser">
+  <component name="RunManager" selected="JUnit.DeletePetTest.deleteTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -239,6 +245,29 @@
       <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
       <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUsersTest" />
       <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="DeletePetTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.pet.delete_pet.positive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.delete_pet.positive" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.delete_pet.positive.DeletePetTest" />
+      <option name="METHOD_NAME" value="deleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -337,9 +366,11 @@
       <item itemvalue="JUnit.UpdateNotFoundTest.notFoundPetTest" />
       <item itemvalue="JUnit.DeletePetWithAllParametersTest.deletePetWithAllParameters" />
       <item itemvalue="JUnit.AddUsersTest.addUser" />
+      <item itemvalue="JUnit.DeletePetTest.deleteTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DeletePetTest.deleteTest" />
         <item itemvalue="JUnit.AddUsersTest.addUser" />
         <item itemvalue="JUnit.DeletePetWithAllParametersTest.deletePetWithAllParameters" />
         <item itemvalue="JUnit.UpdateNotFoundTest.notFoundPetTest" />
@@ -380,6 +411,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="25" width="1418" height="824" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -390,11 +422,11 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" weight="0.32994187" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3287483" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3287483" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3287483" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -542,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/PetModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -648,6 +673,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
         </state>
       </provider>
     </entry>

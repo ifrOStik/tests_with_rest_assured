@@ -1,5 +1,6 @@
 package io.swagger.petstore.user.add_user;
 
+import io.swagger.petstore.assertions.user.UserModelAssert;
 import io.swagger.petstore.controllers.user.UserController;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.user.UserDataGenerator;
@@ -18,6 +19,6 @@ public class AddUsersTest extends UserDataGenerator {
 
         UserModel response = userController.getUser();
 
-        Assert.assertEquals(response, user);
+        UserModelAssert.assertThat(response).isEqualTo(user);
     }
 }
