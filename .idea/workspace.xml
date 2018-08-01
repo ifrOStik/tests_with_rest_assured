@@ -1,15 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8837f73a-aeeb-4ccc-b121-9e01edc66eb4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/get_user/GetUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/AbstractCategoryAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/AbstractPetModelAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/AbstractTagsItemAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/CategoryAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/PetFailResponseAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/PetModelAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/TagsItemAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/pet/PetController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/models/pet/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/models/pet/PetFailResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/models/pet/PetModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/models/pet/TagsItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/models/user/UserModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/utils/OrderStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/utils/PetStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/utils/StaticData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/PetDataGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/positive/AddPetWithAllStatusTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/get_pet/positive/GetPetByIdTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/update_pet/negative/UpdateNotFoundTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/update_pet/positive/UpdatePetByIdTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/user/UserDataGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/user/add_user/AddUsersTest.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AddUsersTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetUserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/get_user/GetUserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/UserDataGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/get_user/GetUserTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="restassure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="restassure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="restassure" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="2" />
     <option name="y" value="25" />
     <option name="width" value="1418" />
     <option name="height" value="824" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="assertions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="assertions" type="462c0819:PsiDirectoryNode" />
+              <item name="pet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="pet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="pet" type="462c0819:PsiDirectoryNode" />
+              <item name="positive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="petstore" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="add_user" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GetUserTest.getUserTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -26,6 +314,29 @@
       <option name="PACKAGE_NAME" value="io.swagger.petstore.user.add_user" />
       <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.add_user.AddUsersTest" />
       <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GetUserTest.getUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.user.get_user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.user.get_user" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.user.get_user.GetUserTest" />
+      <option name="METHOD_NAME" value="getUserTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -74,11 +385,134 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AddUsersTest.addUser" />
+      <item itemvalue="JUnit.GetUserTest.getUserTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GetUserTest.getUserTest" />
         <item itemvalue="JUnit.AddUsersTest.addUser" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8837f73a-aeeb-4ccc-b121-9e01edc66eb4" name="Default" comment="" />
+      <created>1533139722965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533139722965</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AddUsersTest_addUser - 2018.08.01 at 13h 10m 32s.xml">
+      <configuration name="AddUsersTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddUsersTest_addUser - 2018.08.01 at 13h 11m 34s.xml">
+      <configuration name="AddUsersTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GetUserTest_getUserTest - 2018.08.01 at 13h 38m 03s.xml">
+      <configuration name="GetUserTest.getUserTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2" y="25" width="1418" height="824" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" weight="0.3287483" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.32994187" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287483" />
+      <window_info anchor="bottom" id="Version Control" weight="0.3287483" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/UserDataGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+          <folding>
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/add_user/AddUsersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByIdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/get_user/GetUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
