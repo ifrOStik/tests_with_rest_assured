@@ -8,6 +8,8 @@ import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.utils.StaticData;
 
 
+import java.util.ArrayList;
+
 import static io.restassured.RestAssured.given;
 
 public class UserController {
@@ -35,9 +37,9 @@ public class UserController {
                 .log(LogDetail.ALL).build();
     }
 
-    public void addUsersList() {
+    public void addUsersList(ArrayList<UserModel> userModels) {
         given(requestSpecification)
-                .body(user)
+                .body(userModels)
                 .when()
                 .post()
                 .then()
@@ -45,9 +47,9 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
-    public void addUsersArray() {
+    public void addUsersArray(UserModel[] userModels) {
         given(requestSpecification)
-                .body(user)
+                .body(userModels)
                 .when()
                 .post()
                 .then()
@@ -73,6 +75,16 @@ public class UserController {
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .and().extract().response().as(UserModel.class);
+    }
+
+    public int login(String username, String password) {
+        return given(requestSpecification)
+                .when()
+                .get("login?username=" + username + "&" + password)
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .and().extract().response().as(int.class);
     }
 
     public void updateUser() {
