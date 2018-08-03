@@ -5,6 +5,7 @@
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/update_pet/positive/UpdatePetByIdTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByIdTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.java
+/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/get_user/LoginTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/get_user/GetUserTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.java

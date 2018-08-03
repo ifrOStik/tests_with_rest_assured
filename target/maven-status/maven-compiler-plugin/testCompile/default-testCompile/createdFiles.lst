@@ -3,6 +3,7 @@ io/swagger/petstore/assertions/pet/AbstractTagsItemAssert.class
 io/swagger/petstore/models/user/UserModel.class
 io/swagger/petstore/models/pet/PetModel.class
 io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.class
+io/swagger/petstore/user/get_user/LoginTest.class
 io/swagger/petstore/assertions/pet/AbstractPetModelAssert.class
 io/swagger/petstore/controllers/user/UserController.class
 io/swagger/petstore/assertions/user/AbstractUserModelAssert.class

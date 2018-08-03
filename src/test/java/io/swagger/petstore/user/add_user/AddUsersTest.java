@@ -21,14 +21,4 @@ public class AddUsersTest extends UserDataGenerator {
 
         UserModelAssert.assertThat(response).isEqualTo(user);
     }
-
-    @Test
-    public void test() {
-
-        UserController userController = new UserController();
-
-        int userSession = userController.login("string", "string");
-
-        Assert.assertEquals(userSession, int.class);
-    }
 }

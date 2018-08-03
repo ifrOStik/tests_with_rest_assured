@@ -1,13 +1,16 @@
 package io.swagger.petstore.controllers.user;
 
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
+import io.restassured.parsing.Parser;
 import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.utils.StaticData;
 
 
+import java.text.ParseException;
 import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
@@ -77,14 +80,14 @@ public class UserController {
                 .and().extract().response().as(UserModel.class);
     }
 
-    public int login(String username, String password) {
-        return given(requestSpecification)
+    public void loginUser(String username, String password) {
+        given(requestSpecification)
                 .when()
-                .get("login?username=" + username + "&" + password)
+                .get("login?username=" + username + "&password=" + password)
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
-                .and().extract().response().as(int.class);
+                .and().extract().response().prettyPrint();
     }
 
     public void updateUser() {
