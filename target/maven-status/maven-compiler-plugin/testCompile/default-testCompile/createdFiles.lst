@@ -19,6 +19,8 @@ io/swagger/petstore/assertions/pet/PetFailResponseAssert.class
 io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.class
 io/swagger/petstore/models/pet/Category.class
 io/swagger/petstore/user/get_user/GetUserTest.class
+io/swagger/petstore/assertions/order/AbstractOrderModelAssert.class
+io/swagger/petstore/assertions/order/OrderModelAssert.class
 io/swagger/petstore/utils/OrderStatus.class
 io/swagger/petstore/pet/add_pet/positive/AddPetWithAllStatusTest.class
 io/swagger/petstore/pet/update_pet/negative/UpdateNotFoundTest.class
@@ -26,8 +28,10 @@ io/swagger/petstore/assertions/pet/AbstractCategoryAssert.class
 io/swagger/petstore/user/UserDataGenerator.class
 io/swagger/petstore/controllers/pet/PetController.class
 io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.class
+io/swagger/petstore/models/order/OrderModel.class
 io/swagger/petstore/models/pet/PetFailResponse.class
 io/swagger/petstore/utils/StaticData.class
+io/swagger/petstore/user/update_user/UpdateUserTest.class
 io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.class
 io/swagger/petstore/assertions/user/UserModelAssert.class
 io/swagger/petstore/pet/update_pet/positive/UpdatePetByIdTest.class

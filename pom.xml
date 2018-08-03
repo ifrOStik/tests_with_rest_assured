@@ -71,7 +71,7 @@
 
                     <hierarchical>true</hierarchical>
                     <targetDir>src/main/java</targetDir>
-                    <generateAssertionsInPackage>io.swagger.petstore.assertions.user</generateAssertionsInPackage>
+                    <generateAssertionsInPackage>io.swagger.petstore.assertions.order</generateAssertionsInPackage>
                     <generateAssertions>true</generateAssertions>
                     <generateBddAssertions>false</generateBddAssertions>
                     <generateSoftAssertions>false</generateSoftAssertions>

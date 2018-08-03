@@ -3,6 +3,7 @@ io/swagger/petstore/assertions/pet/AbstractTagsItemAssert.class
 io/swagger/petstore/models/user/UserModel.class
 io/swagger/petstore/models/pet/PetModel.class
 io/swagger/petstore/controllers/pet/PetController.class
+io/swagger/petstore/models/order/OrderModel.class
 io/swagger/petstore/assertions/pet/AbstractPetModelAssert.class
 io/swagger/petstore/controllers/user/UserController.class
 io/swagger/petstore/assertions/user/AbstractUserModelAssert.class
@@ -15,6 +16,8 @@ io/swagger/petstore/models/pet/TagsItem.class
 io/swagger/petstore/utils/PetStatus.class
 io/swagger/petstore/assertions/pet/PetFailResponseAssert.class
 io/swagger/petstore/models/pet/Category.class
+io/swagger/petstore/assertions/order/AbstractOrderModelAssert.class
 io/swagger/petstore/assertions/user/UserModelAssert.class
+io/swagger/petstore/assertions/order/OrderModelAssert.class
 io/swagger/petstore/utils/OrderStatus.class
 io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.class
