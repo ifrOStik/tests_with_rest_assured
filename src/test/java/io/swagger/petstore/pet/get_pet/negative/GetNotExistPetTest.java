@@ -1,4 +1,4 @@
-package io.swagger.petstore.pet.delete_pet.positive;
+package io.swagger.petstore.pet.get_pet.negative;
 
 import io.swagger.petstore.assertions.pet.PetBadResponseAssert;
 import io.swagger.petstore.controllers.pet.PetController;
@@ -8,21 +8,20 @@ import io.swagger.petstore.pet.PetDataGenerator;
 import io.swagger.petstore.utils.PetStatus;
 import org.junit.Test;
 
-
-public class DeletePetWithAllParametersTest extends PetDataGenerator {
+public class GetNotExistPetTest extends PetDataGenerator {
 
     @Test
-    public void deletePetWithAllParameters() {
+    public void getNotExistTest() {
 
-        PetModel testPet = petModelGeneratorWithAllPatameters(PetStatus.available);
+        PetModel testPet = petModelRandomGenerator(PetStatus.available);
 
         PetController petController = new PetController(testPet);
         petController.addNewPet();
         petController.deletePet(200);
 
-        PetBadResponse petRequest = (PetBadResponse) petController.getPetById();
+        PetBadResponse petResponse = (PetBadResponse) petController.getPetById();
 
-        PetBadResponseAssert.assertThat(petRequest)
+        PetBadResponseAssert.assertThat(petResponse)
                 .hasCode(1)
                 .hasType("error")
                 .hasMessage("Pet not found");

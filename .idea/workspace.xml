@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0182601d-26d1-435e-8f35-ec180d9996f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/OrderFirstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetBadResponseModelAssert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/PetFailResponseAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/PetBadResponseAssert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/PetFailResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/PetBadResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/update_pet/negative/UpdateNotFoundTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/pet/PetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/pet/PetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/user/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/restassure-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/restassure-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/pet/PetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/pet/PetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/update_pet/negative/UpdateNotFoundTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PetController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PetController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="131" column="37" selection-start-line="131" selection-start-column="37" selection-end-line="131" selection-end-column="37" />
+            <state relative-caret-position="213">
+              <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvalidInputRequestTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.java">
+      <file leaf-file-name="UpdatePetByIdTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/update_pet/positive/UpdatePetByIdTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="360">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +87,11 @@
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/OrderFirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatus2.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/GetPetStatus.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/GetPetStatusModel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" />
       </list>
     </option>
@@ -280,18 +287,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="petstore" type="462c0819:PsiDirectoryNode" />
               <item name="pet" type="462c0819:PsiDirectoryNode" />
-              <item name="add_pet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="petstore" type="462c0819:PsiDirectoryNode" />
-              <item name="pet" type="462c0819:PsiDirectoryNode" />
-              <item name="add_pet" type="462c0819:PsiDirectoryNode" />
-              <item name="negative" type="462c0819:PsiDirectoryNode" />
+              <item name="update_pet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,46 +313,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InvalidInputRequestTest.invalidInputTest">
+  <component name="RunManager" selected="JUnit.UpdatePetByIdTest.updatePetTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="GetPetByStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.get_pet.positive.*" />
+          <option name="PATTERN" value="io.swagger.petstore.pet.delete_pet.negative.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.get_pet.positive" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.get_pet.positive.GetPetByStatusTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GetPetByStatusTest.getPetsWithSoldStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restassure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.get_pet.positive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.get_pet.positive" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.get_pet.positive.GetPetByStatusTest" />
-      <option name="METHOD_NAME" value="getPetsWithSoldStatus" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.delete_pet.negative" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.delete_pet.negative.DeleteNonexistentPetTest" />
+      <option name="METHOD_NAME" value="deleteNonexistentPet" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -367,19 +340,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GetPetByStatusTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetNotExistPetTest.getNotExistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.get_pet.positive.*" />
+          <option name="PATTERN" value="io.swagger.petstore.pet.get_pet.negative.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.get_pet.positive" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.get_pet.positive.GetPetByStatusTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.get_pet.negative" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.get_pet.negative.GetNotExistPetTest" />
+      <option name="METHOD_NAME" value="getNotExistTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -436,6 +409,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="UpdatePetByIdTest.updatePetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.pet.update_pet.positive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.update_pet.positive" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.update_pet.positive.UpdatePetByIdTest" />
+      <option name="METHOD_NAME" value="updatePetTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -476,18 +472,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.GetPetByStatusTest.test2" />
-      <item itemvalue="JUnit.GetPetByStatusTest.test" />
-      <item itemvalue="JUnit.GetPetByStatusTest.getPetsWithSoldStatus" />
-      <item itemvalue="JUnit.GetPetByStatusTest" />
       <item itemvalue="JUnit.InvalidInputRequestTest.invalidInputTest" />
+      <item itemvalue="JUnit.DeleteNonexistentPetTest.deleteNonexistentPet" />
+      <item itemvalue="JUnit.GetNotExistPetTest.getNotExistTest" />
+      <item itemvalue="JUnit.UpdatePetByIdTest.updatePetTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InvalidInputRequestTest.invalidInputTest" />
-        <item itemvalue="JUnit.GetPetByStatusTest.getPetsWithSoldStatus" />
-        <item itemvalue="JUnit.GetPetByStatusTest" />
+        <item itemvalue="JUnit.UpdatePetByIdTest.updatePetTest" />
+        <item itemvalue="JUnit.GetNotExistPetTest.getNotExistTest" />
+        <item itemvalue="JUnit.DeleteNonexistentPetTest.deleteNonexistentPet" />
         <item itemvalue="JUnit.GetPetByStatusTest.test2" />
-        <item itemvalue="JUnit.GetPetByStatusTest.test" />
+        <item itemvalue="JUnit.InvalidInputRequestTest.invalidInputTest" />
       </list>
     </recent_temporary>
   </component>
@@ -513,35 +509,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 01m 24s.xml">
+    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 10m 23s.xml">
       <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 01m 59s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="GetPetByStatusTest_test2 - 2018.08.04 at 13h 17m 52s.xml">
+      <configuration name="GetPetByStatusTest.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 02m 18s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNonexistentPetTest_deleteNonexistentPet - 2018.08.04 at 13h 25m 07s.xml">
+      <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 03m 41s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNonexistentPetTest_deleteNonexistentPet - 2018.08.04 at 13h 25m 58s.xml">
+      <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 04m 25s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNonexistentPetTest_deleteNonexistentPet - 2018.08.04 at 13h 26m 30s.xml">
+      <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 04m 59s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNonexistentPetTest_deleteNonexistentPet - 2018.08.04 at 13h 27m 17s.xml">
+      <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 05m 38s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNonexistentPetTest_deleteNonexistentPet - 2018.08.04 at 13h 28m 13s.xml">
+      <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 06m 26s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNonexistentPetTest_deleteNonexistentPet - 2018.08.04 at 13h 29m 02s.xml">
+      <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 07m 16s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="GetNotExistPetTest_getNotExistTest - 2018.08.04 at 13h 32m 25s.xml">
+      <configuration name="GetNotExistPetTest.getNotExistTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputRequestTest_invalidInputTest - 2018.08.04 at 13h 08m 05s.xml">
-      <configuration name="InvalidInputRequestTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="UpdatePetByIdTest_updatePetTest - 2018.08.04 at 13h 35m 09s.xml">
+      <configuration name="UpdatePetByIdTest.updatePetTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -555,20 +551,20 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" visible="true" weight="0.32994187" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287483" />
+      <window_info anchor="right" id="Maven Projects" weight="0.32994187" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287483" />
       <window_info anchor="bottom" id="Version Control" weight="0.3287483" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3287483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39889959" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -603,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByIdTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -621,16 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/update_pet/positive/UpdatePetByIdTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,7 +627,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/PetFailResponseAssert.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/PetBadResponseAssert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
@@ -715,13 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1176">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -817,7 +789,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetBadResponseModelAssert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
@@ -883,33 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/PetFailResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/user/update_user/UpdateUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -927,20 +872,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="131" column="37" selection-start-line="131" selection-start-column="37" selection-end-line="131" selection-end-column="37" />
+        <state relative-caret-position="225">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/PetBadResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/GetPetStatusModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding>
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/update_pet/positive/UpdatePetByIdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
