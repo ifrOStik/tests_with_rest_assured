@@ -1,4 +1,5 @@
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/controllers/user/UserController.java
+/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/controllers/pet/PetController.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/models/pet/Category.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/PetFailResponseAssert.java
@@ -24,6 +25,7 @@
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/PetModelAssert.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetModelAssert.java
+/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/OrderFirstTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/models/pet/PetModel.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/models/pet/TagsItem.java

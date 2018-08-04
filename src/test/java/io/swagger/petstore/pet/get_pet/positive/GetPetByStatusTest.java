@@ -25,8 +25,7 @@ public class GetPetByStatusTest extends PetDataGenerator {
     }
 
 
-    @Test
-    public void test(PetStatus petStatus) {
+    private void test(PetStatus petStatus) {
 
         PetModel testPet = petModelRandomGenerator(petStatus);
         new PetController(testPet).getPetByStatus();

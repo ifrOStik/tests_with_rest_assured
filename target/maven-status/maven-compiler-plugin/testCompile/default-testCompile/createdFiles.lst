@@ -24,10 +24,12 @@ io/swagger/petstore/assertions/order/OrderModelAssert.class
 io/swagger/petstore/utils/OrderStatus.class
 io/swagger/petstore/pet/add_pet/positive/AddPetWithAllStatusTest.class
 io/swagger/petstore/pet/update_pet/negative/UpdateNotFoundTest.class
+io/swagger/petstore/order/OrderFirstTest.class
 io/swagger/petstore/assertions/pet/AbstractCategoryAssert.class
 io/swagger/petstore/user/UserDataGenerator.class
 io/swagger/petstore/controllers/pet/PetController.class
 io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.class
+io/swagger/petstore/pet/add_pet/negative/InvalidInputRequestTest.class
 io/swagger/petstore/models/order/OrderModel.class
 io/swagger/petstore/models/pet/PetFailResponse.class
 io/swagger/petstore/utils/StaticData.class

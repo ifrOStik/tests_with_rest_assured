@@ -1,16 +1,13 @@
 package io.swagger.petstore.controllers.user;
 
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
-import io.restassured.parsing.Parser;
 import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.utils.StaticData;
 
 
-import java.text.ParseException;
 import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
