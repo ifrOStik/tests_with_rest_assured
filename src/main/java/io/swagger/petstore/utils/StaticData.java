@@ -11,4 +11,5 @@ public class StaticData {
     public static String headerValue = "qwerty123";
     public static String PatPath = "/v2/pet";
     public static String UserPath = "/v2/user";
+    public static String OrderPath = "/v2/store/order";
 }

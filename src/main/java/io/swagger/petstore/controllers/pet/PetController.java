@@ -5,7 +5,7 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import io.swagger.petstore.models.pet.PetBadResponse;
+import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.utils.StaticData;
 
@@ -83,7 +83,7 @@ public class PetController {
                     .extract().response().as(PetModel.class);
         } else {
             return response.then().contentType(ContentType.JSON)
-                    .extract().response().as(PetBadResponse.class);
+                    .extract().response().as(BadResponse.class);
         }
     }
 
@@ -95,7 +95,7 @@ public class PetController {
                .contentType(ContentType.JSON);
     }
 
-    public PetBadResponse badRequest() {
+    public BadResponse badRequest() {
         return given(requestSpecification)
                 .body("{\n" +
                         " \"id\": " + 1111 + ",\n" +
@@ -107,10 +107,10 @@ public class PetController {
                 .then()
                 .statusCode(400)
                 .contentType(ContentType.JSON)
-                .and().extract().response().as(PetBadResponse.class);
+                .and().extract().response().as(BadResponse.class);
     }
 
-    public PetBadResponse serverErrorRequest() {
+    public BadResponse serverErrorRequest() {
         return given(requestSpecification)
                 .body("{\n" +
                         " \"id\": " + 1111 + ",\n" +
@@ -123,7 +123,7 @@ public class PetController {
                 .then()
                 .statusCode(500)
                 .contentType(ContentType.JSON)
-                .and().extract().response().as(PetBadResponse.class);
+                .and().extract().response().as(BadResponse.class);
     }
 }
 

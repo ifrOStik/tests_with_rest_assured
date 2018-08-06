@@ -51,7 +51,7 @@ public class PetDataGenerator {
         return petModel;
     }
 
-    public PetModel petModelGeneratorWithAllPatameters(PetStatus petStatus) {
+    public PetModel petModelGeneratorWithAllParameters(PetStatus petStatus) {
         PetModel petModel = new PetModel();
         petModel.setId(petIdGenerator());
         petModel.setName(petNameGenerator());

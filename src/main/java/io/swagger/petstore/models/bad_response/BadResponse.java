@@ -1,20 +1,20 @@
-package io.swagger.petstore.models.pet;
+package io.swagger.petstore.models.bad_response;
 
 /**
  * Created by temaustimcik on 2018-07-26.
  */
-public class PetBadResponse {
+public class BadResponse {
 
     private Integer code;
     private String type, message;
 
-    public PetBadResponse(Integer code, String type, String message) {
+    public BadResponse(Integer code, String type, String message) {
         this.code = code;
         this.type = type;
         this.message = message;
     }
 
-    public PetBadResponse() {
+    public BadResponse() {
     }
 
     public Integer getCode() {
