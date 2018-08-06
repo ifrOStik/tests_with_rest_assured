@@ -5,6 +5,7 @@
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByIdTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java
+/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/delete_order/negative/DeleteNotExistOrderTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/get_user/LoginTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/get_user/GetUserTest.java
@@ -23,8 +24,10 @@
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/models/bad_response/BadResponse.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/PetModelAssert.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetModelAssert.java
+/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/bad_response/AbstractBadResponseModelAssert.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/OrderDataGenerator.java
+/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/delete_order/positive/DeleteOrderTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/models/pet/PetModel.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/models/pet/TagsItem.java

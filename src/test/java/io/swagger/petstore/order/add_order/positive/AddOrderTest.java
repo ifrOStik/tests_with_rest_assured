@@ -1,4 +1,4 @@
-package io.swagger.petstore.order.add_order;
+package io.swagger.petstore.order.add_order.positive;
 
 import io.swagger.petstore.assertions.order.OrderModelAssert;
 import io.swagger.petstore.controllers.order.OrderController;
@@ -14,9 +14,9 @@ public class AddOrderTest extends OrderDataGenerator {
         OrderModel order = orderModelGeneratorWithPet();
 
         OrderController orderController = new OrderController(order);
-        OrderModel request = orderController.addOrder();
+        OrderModel response = orderController.addOrder();
 
-        OrderModelAssert.assertThat(request)
+        OrderModelAssert.assertThat(response)
                 .hasId(order.getId())
                 .hasPetId(order.getPetId())
                 .hasQuantity(order.getQuantity())

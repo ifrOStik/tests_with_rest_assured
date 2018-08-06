@@ -28,7 +28,10 @@ io/swagger/petstore/assertions/order/OrderModelAssert.class
 io/swagger/petstore/utils/OrderStatus.class
 io/swagger/petstore/pet/add_pet/positive/AddPetWithAllStatusTest.class
 io/swagger/petstore/assertions/bad_response/BadResponseAssert.class
+io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.class
 io/swagger/petstore/assertions/pet/AbstractCategoryAssert.class
+io/swagger/petstore/order/delete_order/positive/DeleteOrderTest.class
+io/swagger/petstore/order/delete_order/negative/DeleteNotExistOrderTest.class
 io/swagger/petstore/user/UserDataGenerator.class
 io/swagger/petstore/controllers/pet/PetController.class
 io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.class

@@ -2,46 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0182601d-26d1-435e-8f35-ec180d9996f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/order/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/OrderDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/negative/DeleteNotExistOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/positive/DeleteOrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetBadResponseModelAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/bad_response/AbstractBadResponseModelAssert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/PetBadResponseAssert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/bad_response/BadResponseAssert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/order/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/PetBadResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/bad_response/BadResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/OrderFirstTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/PetDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/PetDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/assertions/pet/PetFailResponseAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/order/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/order/OrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/pet/PetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/swagger/petstore/controllers/pet/PetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/models/pet/PetFailResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/swagger/petstore/utils/StaticData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/swagger/petstore/utils/StaticData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/restassure-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/restassure-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/assertions/pet/AbstractPetNotFoundModelAssert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/assertions/pet/PetFailResponseAssert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/order/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/order/OrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/pet/PetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/controllers/pet/PetController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/models/pet/PetFailResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/order/OrderFirstTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/PetDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/PetDataGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/utils/StaticData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/utils/StaticData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/order/add_order/positive/AddOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/io/swagger/petstore/order/add_order/positive/AddOrderTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,11 +30,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddOrderTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java">
+      <file leaf-file-name="DeleteOrderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/positive/DeleteOrderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteNotExistOrderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/negative/DeleteNotExistOrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -65,20 +51,17 @@
       <file leaf-file-name="OrderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/order/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="192">
+              <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvalidInputAddOrderTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.java">
+      <file leaf-file-name="GetListInventoryTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="165">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,18 +102,22 @@
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/PetDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/utils/StaticData.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/AddOrderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/OrderDataGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/pet/BadResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/models/bad_response/BadResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/bad_response/BadResponseAssert.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/DeleteOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/positive/DeleteOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/negative/DeleteNotExistOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/order/OrderController.java" />
       </list>
     </option>
@@ -279,36 +266,6 @@
               <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="add_order" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="petstore" type="462c0819:PsiDirectoryNode" />
-              <item name="pet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="petstore" type="462c0819:PsiDirectoryNode" />
-              <item name="pet" type="462c0819:PsiDirectoryNode" />
-              <item name="add_pet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="restassure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tests_with_rest_assured" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="petstore" type="462c0819:PsiDirectoryNode" />
-              <item name="pet" type="462c0819:PsiDirectoryNode" />
-              <item name="add_pet" type="462c0819:PsiDirectoryNode" />
-              <item name="negative" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -333,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InvalidInputAddOrderTest.invalidInputTest">
+  <component name="RunManager" selected="JUnit.GetListInventoryTest.getListInventory">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -360,19 +317,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="DeleteNonexistentPetTest.deleteNonexistentPet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteNotExistOrderTest.deleteNotExistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.delete_pet.negative.*" />
+          <option name="PATTERN" value="io.swagger.petstore.order.delete_order.negative.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.delete_pet.negative" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.delete_pet.negative.DeleteNonexistentPetTest" />
-      <option name="METHOD_NAME" value="deleteNonexistentPet" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.order.delete_order.negative" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.order.delete_order.negative.DeleteNotExistOrderTest" />
+      <option name="METHOD_NAME" value="deleteNotExistTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -383,19 +340,42 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GetNotExistPetTest.getNotExistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteOrderTest.deleteOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restassure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.get_pet.negative.*" />
+          <option name="PATTERN" value="io.swagger.petstore.order.delete_order.positive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.get_pet.negative" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.get_pet.negative.GetNotExistPetTest" />
-      <option name="METHOD_NAME" value="getNotExistTest" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.order.delete_order.positive" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.order.delete_order.positive.DeleteOrderTest" />
+      <option name="METHOD_NAME" value="deleteOrderTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="GetListInventoryTest.getListInventory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restassure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.swagger.petstore.order.get_list_inventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="io.swagger.petstore.order.get_list_inventory" />
+      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.order.get_list_inventory.GetListInventoryTest" />
+      <option name="METHOD_NAME" value="getListInventory" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -419,29 +399,6 @@
       <option name="PACKAGE_NAME" value="io.swagger.petstore.order.add_order.negative" />
       <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.order.add_order.negative.InvalidInputAddOrderTest" />
       <option name="METHOD_NAME" value="invalidInputTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UpdatePetByIdTest.updatePetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="restassure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.swagger.petstore.pet.update_pet.positive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.swagger.petstore.pet.update_pet.positive" />
-      <option name="MAIN_CLASS_NAME" value="io.swagger.petstore.pet.update_pet.positive.UpdatePetByIdTest" />
-      <option name="METHOD_NAME" value="updatePetTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -491,19 +448,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.DeleteNonexistentPetTest.deleteNonexistentPet" />
-      <item itemvalue="JUnit.GetNotExistPetTest.getNotExistTest" />
-      <item itemvalue="JUnit.UpdatePetByIdTest.updatePetTest" />
       <item itemvalue="JUnit.AddOrderTest.addNewOrder" />
       <item itemvalue="JUnit.InvalidInputAddOrderTest.invalidInputTest" />
+      <item itemvalue="JUnit.DeleteOrderTest.deleteOrderTest" />
+      <item itemvalue="JUnit.DeleteNotExistOrderTest.deleteNotExistTest" />
+      <item itemvalue="JUnit.GetListInventoryTest.getListInventory" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InvalidInputAddOrderTest.invalidInputTest" />
+        <item itemvalue="JUnit.GetListInventoryTest.getListInventory" />
+        <item itemvalue="JUnit.DeleteNotExistOrderTest.deleteNotExistTest" />
+        <item itemvalue="JUnit.DeleteOrderTest.deleteOrderTest" />
         <item itemvalue="JUnit.AddOrderTest.addNewOrder" />
-        <item itemvalue="JUnit.UpdatePetByIdTest.updatePetTest" />
-        <item itemvalue="JUnit.GetNotExistPetTest.getNotExistTest" />
-        <item itemvalue="JUnit.DeleteNonexistentPetTest.deleteNonexistentPet" />
+        <item itemvalue="JUnit.InvalidInputAddOrderTest.invalidInputTest" />
       </list>
     </recent_temporary>
   </component>
@@ -529,35 +486,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddOrderTest_addNewOrder - 2018.08.06 at 11h 30m 12s.xml">
-      <configuration name="AddOrderTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="DeleteOrderTest_deleteOrderTest - 2018.08.06 at 16h 38m 40s.xml">
+      <configuration name="DeleteOrderTest.deleteOrderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddOrderTest_addNewOrder - 2018.08.06 at 11h 33m 03s.xml">
-      <configuration name="AddOrderTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="DeleteOrderTest_deleteOrderTest - 2018.08.06 at 16h 39m 17s.xml">
+      <configuration name="DeleteOrderTest.deleteOrderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddOrderTest_addNewOrder - 2018.08.06 at 11h 34m 20s.xml">
-      <configuration name="AddOrderTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="DeleteOrderTest_deleteOrderTest - 2018.08.06 at 16h 46m 33s.xml">
+      <configuration name="DeleteOrderTest.deleteOrderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddOrderTest_addNewOrder - 2018.08.06 at 11h 34m 51s.xml">
-      <configuration name="AddOrderTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="DeleteOrderTest_deleteOrderTest - 2018.08.06 at 16h 48m 32s.xml">
+      <configuration name="DeleteOrderTest.deleteOrderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddOrderTest_addNewOrder - 2018.08.06 at 11h 36m 52s.xml">
-      <configuration name="AddOrderTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="DeleteNotExistOrderTest_deleteNotExistTest - 2018.08.06 at 16h 51m 14s.xml">
+      <configuration name="DeleteNotExistOrderTest.deleteNotExistTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddOrderTest_addNewOrder - 2018.08.06 at 12h 03m 13s.xml">
-      <configuration name="AddOrderTest.addNewOrder" configurationId="JUnit" />
+    <history-entry file="DeleteNotExistOrderTest_deleteNotExistTest - 2018.08.06 at 16h 54m 35s.xml">
+      <configuration name="DeleteNotExistOrderTest.deleteNotExistTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputAddOrderTest_invalidInputTest - 2018.08.06 at 12h 19m 39s.xml">
-      <configuration name="InvalidInputAddOrderTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNotExistOrderTest_deleteNotExistTest - 2018.08.06 at 16h 55m 07s.xml">
+      <configuration name="DeleteNotExistOrderTest.deleteNotExistTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputAddOrderTest_invalidInputTest - 2018.08.06 at 12h 20m 09s.xml">
-      <configuration name="InvalidInputAddOrderTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="DeleteNotExistOrderTest_deleteNotExistTest - 2018.08.06 at 16h 55m 35s.xml">
+      <configuration name="DeleteNotExistOrderTest.deleteNotExistTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputAddOrderTest_invalidInputTest - 2018.08.06 at 12h 41m 08s.xml">
-      <configuration name="InvalidInputAddOrderTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="GetListInventoryTest_getListInventory - 2018.08.06 at 16h 57m 46s.xml">
+      <configuration name="GetListInventoryTest.getListInventory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InvalidInputAddOrderTest_invalidInputTest - 2018.08.06 at 12h 44m 14s.xml">
-      <configuration name="InvalidInputAddOrderTest.invalidInputTest" configurationId="JUnit" />
+    <history-entry file="GetListInventoryTest_getListInventory - 2018.08.06 at 16h 58m 51s.xml">
+      <configuration name="GetListInventoryTest.getListInventory" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -605,27 +562,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/update_pet/negative/UpdateNotFoundTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/CategoryAssert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/assertions/pet/PetModelAssert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -835,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1024,16 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="101" column="54" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1041,27 +960,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/order/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/pet/PetController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/positive/DeleteOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/delete_order/negative/DeleteNotExistOrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/petstore/controllers/order/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="103" column="33" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -79,10 +79,12 @@ public class PetController {
         Response response = given(requestSpecification)
                 .get(String.valueOf(pet.getId()));
         if (response.statusCode() == 200) {
-            return response.then().contentType(ContentType.JSON)
+            return response.then()
+                    .contentType(ContentType.JSON)
                     .extract().response().as(PetModel.class);
         } else {
-            return response.then().contentType(ContentType.JSON)
+            return response.then()
+                    .contentType(ContentType.JSON)
                     .extract().response().as(BadResponse.class);
         }
     }
