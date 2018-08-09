@@ -1,5 +1,6 @@
 package io.swagger.petstore.controllers.user;
 
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
@@ -38,7 +39,14 @@ public class UserController {
     }
 
     public void addUsersList(ArrayList<UserModel> userModels) {
-        given(requestSpecification)
+        RestAssured.requestSpecification = new RequestSpecBuilder()
+                .setBaseUri(StaticData.BASE_URI)
+                .setBasePath("/v2/user/createWithList")
+                .setContentType(ContentType.JSON)
+                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .log(LogDetail.ALL).build();
+
+        given()
                 .body(userModels)
                 .when()
                 .post()
@@ -48,7 +56,14 @@ public class UserController {
     }
 
     public void addUsersArray(UserModel[] userModels) {
-        given(requestSpecification)
+        RestAssured.requestSpecification = new RequestSpecBuilder()
+                .setBaseUri(StaticData.BASE_URI)
+                .setBasePath("/v2/user/createWithArray")
+                .setContentType(ContentType.JSON)
+                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .log(LogDetail.ALL).build();
+
+        given()
                 .body(userModels)
                 .when()
                 .post()
@@ -71,6 +86,16 @@ public class UserController {
         return given(requestSpecification)
                 .when()
                 .get(user.getUsername())
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .and().extract().response().as(UserModel.class);
+    }
+
+    public UserModel getUserByName(String userName) {
+        return given(requestSpecification)
+                .when()
+                .get(userName)
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)

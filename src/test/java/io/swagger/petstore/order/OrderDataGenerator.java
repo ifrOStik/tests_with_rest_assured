@@ -88,4 +88,22 @@ public class OrderDataGenerator {
         return orderModelGenerator(petModel.getId());
 
     }
+
+    public OrderModel orderModelGenerator(OrderStatus orderStatus) {
+
+        PetModel petModel = new PetModel();
+        petModel.setId(RandomUtils.nextInt(0,9000));
+        petModel.setName(RandomStringUtils.randomAlphanumeric(6));
+        petModel.setStatus(PetStatus.available.name());
+
+        OrderModel order = new OrderModel();
+        order.setId(orderIdGenerator());
+        order.setPetId(petModel.getId());
+        order.setQuantity(quantityGenerator());
+        order.setShipDate(shipDateGenerator());
+        order.setStatus(orderStatus.name());
+        order.setComplete(statusCompleteGenerator());
+
+        return order;
+    }
 }

@@ -4,7 +4,6 @@ import io.swagger.petstore.assertions.user.UserModelAssert;
 import io.swagger.petstore.controllers.user.UserController;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.user.UserDataGenerator;
-import org.junit.Assert;
 import org.junit.Test;
 
 public class AddUsersTest extends UserDataGenerator {
