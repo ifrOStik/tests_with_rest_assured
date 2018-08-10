@@ -4,7 +4,9 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.utils.StaticData;
 
@@ -82,14 +84,22 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
-    public UserModel getUser() {
-        return given(requestSpecification)
+    public Object getUser() {
+        Response response = given(requestSpecification)
                 .when()
-                .get(user.getUsername())
-                .then()
-                .statusCode(200)
-                .contentType(ContentType.JSON)
-                .and().extract().response().as(UserModel.class);
+                .get(user.getUsername());
+
+        if (response.statusCode() == 200) {
+            return response.then()
+                    .contentType(ContentType.JSON)
+                    .statusCode(200)
+                    .and().extract().response().as(UserModel.class);
+        } else {
+            return response.then()
+                    .contentType(ContentType.JSON)
+                    .statusCode(404)
+                    .and().extract().response().as(BadResponse.class);
+        }
     }
 
     public UserModel getUserByName(String userName) {
@@ -112,6 +122,16 @@ public class UserController {
                 .and().extract().response().prettyPrint();
     }
 
+    public void logoutUser() {
+        given(requestSpecification)
+                .when()
+                .get("logout")
+                .then()
+                .statusCode(200)
+                .contentType(ContentType.JSON)
+                .and().extract().response().prettyPrint();
+    }
+
     public void updateUser() {
         given(requestSpecification)
                 .body(user)
@@ -123,11 +143,18 @@ public class UserController {
     }
 
     public void deleteUser() {
-        given(requestSpecification)
+        Response response = given(requestSpecification)
                 .when()
-                .delete(user.getUsername())
-                .then()
-                .statusCode(200)
-                .contentType(ContentType.JSON);
+                .delete(user.getUsername());
+
+        if (response.statusCode() == 200) {
+            response.then()
+                    .statusCode(200)
+                    .contentType(ContentType.JSON);
+        } else {
+            response.then()
+                    .statusCode(404)
+                    .and().extract().response().body().equals("Not Found");
+        }
     }
 }

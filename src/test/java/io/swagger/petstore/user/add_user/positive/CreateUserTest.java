@@ -1,24 +1,23 @@
-package io.swagger.petstore.user.get_user;
+package io.swagger.petstore.user.add_user.positive;
 
 import io.swagger.petstore.assertions.user.UserModelAssert;
 import io.swagger.petstore.controllers.user.UserController;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.user.UserDataGenerator;
-import org.junit.Assert;
 import org.junit.Test;
 
-public class GetUserTest extends UserDataGenerator {
+public class CreateUserTest extends UserDataGenerator {
 
     @Test
-    public void getUserTest() {
+    public void addUser() {
 
         UserModel user = userModelGenerator();
 
         UserController userController = new UserController(user);
         userController.addUser();
 
-        UserModel responseUser = userController.getUser();
+        UserModel response = (UserModel) userController.getUser();
 
-        UserModelAssert.assertThat(responseUser).isEqualTo(user);
+        UserModelAssert.assertThat(response).isEqualTo(user);
     }
 }

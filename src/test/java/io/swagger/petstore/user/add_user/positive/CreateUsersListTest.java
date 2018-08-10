@@ -1,4 +1,4 @@
-package io.swagger.petstore.user.add_user;
+package io.swagger.petstore.user.add_user.positive;
 
 import io.swagger.petstore.assertions.user.UserModelAssert;
 import io.swagger.petstore.controllers.user.UserController;
