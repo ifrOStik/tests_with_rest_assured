@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-public class AddListUsersTest extends UserDataGenerator {
+public class CreateUsersListTest extends UserDataGenerator {
 
     @Test
     public void addListUsers() {
