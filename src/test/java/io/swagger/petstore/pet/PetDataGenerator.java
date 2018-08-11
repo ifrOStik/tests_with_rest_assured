@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class PetDataGenerator {
 
     public String petNameGenerator() {
-        return RandomStringUtils.randomAlphanumeric(6);
+        return "pet_name_" + RandomStringUtils.randomAlphanumeric(6);
     }
 
     public int petIdGenerator() {

@@ -49,8 +49,8 @@
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetModelAssert.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/bad_response/AbstractBadResponseModelAssert.java
-/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/update_user/UpdateUserTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/login_logout/LoginTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/main/java/io/swagger/petstore/utils/PetStatus.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/add_pet/positive/AddPetWithAllStatusTest.java
 /Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.java
+/Users/temaustimcik/Desktop/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/update_user/positive/UpdateUserTest.java

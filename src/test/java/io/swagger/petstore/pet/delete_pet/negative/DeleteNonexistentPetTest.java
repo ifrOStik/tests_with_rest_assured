@@ -12,11 +12,9 @@ public class DeleteNonexistentPetTest extends PetDataGenerator {
     @Test
     public void deleteNonexistentPet() {
 
-        PetModel testPet = petModelRandomGenerator(PetStatus.available);
+        PetModel pet = petModelRandomGenerator(PetStatus.available);
 
-        PetController petController = new PetController(testPet);
-        petController.addNewPet();
-        petController.deletePet(200);
-        petController.deletePet(404);
+        PetController petController = new PetController();
+        petController.deletePet(pet);
     }
 }

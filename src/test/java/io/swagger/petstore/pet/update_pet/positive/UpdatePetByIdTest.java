@@ -13,18 +13,18 @@ public class UpdatePetByIdTest extends PetDataGenerator {
     @Test
     public void updatePetTest() {
 
-        PetModel testPet = petModelRandomGenerator(PetStatus.available);
+        PetModel pet = petModelRandomGenerator(PetStatus.available);
 
-        PetController petController = new PetController(testPet);
-        petController.addNewPet();
+        PetController petController = new PetController();
+        petController.addNewPet(pet);
 
-        testPet.setStatus(PetStatus.sold.name());
-        testPet.setName(petNameGenerator());
-        testPet.setId(petIdGenerator());
+        pet.setStatus(PetStatus.sold.name());
+        pet.setName(petNameGenerator());
+        pet.setId(petIdGenerator());
 
-        petController.updatePetById();
+        petController.updatePetById(pet);
 
-        PetModel petResponse = (PetModel) petController.getPetById();
-        PetModelAssert.assertThat(petResponse).isEqualTo(testPet);
+        PetModel petResponse = (PetModel) petController.getPetById(pet);
+        PetModelAssert.assertThat(petResponse).isEqualTo(pet);
     }
 }

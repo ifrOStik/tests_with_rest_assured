@@ -13,12 +13,12 @@ public class GetPetByIdTest extends PetDataGenerator {
     @Test
     public void getPetById() {
 
-        PetModel testPet = petModelRandomGenerator(PetStatus.available);
+        PetModel pet = petModelRandomGenerator(PetStatus.available);
 
-        PetController petController = new PetController(testPet);
-        petController.addNewPet();
+        PetController petController = new PetController();
+        petController.addNewPet(pet);
 
-        PetModel petRequest = (PetModel) petController.getPetById();
-        PetModelAssert.assertThat(petRequest).isEqualTo(testPet);
+        PetModel petRequest = (PetModel) petController.getPetById(pet);
+        PetModelAssert.assertThat(petRequest).isEqualTo(pet);
     }
 }

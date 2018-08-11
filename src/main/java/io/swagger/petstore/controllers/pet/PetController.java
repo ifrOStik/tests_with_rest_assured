@@ -7,6 +7,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.pet.PetModel;
+import io.swagger.petstore.utils.PetStatus;
 import io.swagger.petstore.utils.StaticData;
 
 import static io.restassured.RestAssured.given;
@@ -14,18 +15,6 @@ import static io.restassured.RestAssured.given;
 public class PetController {
 
     private RequestSpecification requestSpecification;
-    private PetModel pet;
-
-    public PetController(PetModel pet) {
-        requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
-                .setBasePath(StaticData.PatPath)
-                .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
-                .log(LogDetail.ALL).build();
-
-        this.pet = pet;
-    }
 
     public PetController() {
         requestSpecification = new RequestSpecBuilder()
@@ -36,7 +25,7 @@ public class PetController {
                 .log(LogDetail.ALL).build();
     }
 
-    public PetModel addNewPet() {
+    public PetModel addNewPet(PetModel pet) {
          return given(requestSpecification)
                  .body(pet)
                  .when()
@@ -48,25 +37,34 @@ public class PetController {
                  .extract().response().as(PetModel.class);
     }
 
-    public void deletePet(int statusCode) {
-            given(requestSpecification)
-                .delete(String.valueOf(pet.getId()))
-                    .then()
-                    .statusCode(statusCode);
+    public void deletePet(PetModel pet) {
+        Response response = given(requestSpecification)
+                .when()
+                .delete(String.valueOf(pet.getId()));
+
+        if (response.statusCode() == 200) {
+            response.then()
+                    .statusCode(200)
+                    .contentType(ContentType.JSON);
+        } else {
+            response.then()
+                    .statusCode(404)
+                    .and().extract().response().body().equals("Pet not found");
+        }
     }
 
-    public PetModel updatePet(int statusCode) {
+    public PetModel updatePet(PetModel pet) {
         return given(requestSpecification)
                 .body(pet)
                 .put()
                 .then()
-                .statusCode(statusCode)
+                .statusCode(200)
                 .contentType(ContentType.JSON)
                 .and()
                 .extract().response().as(PetModel.class);
     }
 
-    public void updatePetById() {
+    public void updatePetById(PetModel pet) {
         given(requestSpecification)
                 .body(pet)
                 .post()
@@ -75,7 +73,7 @@ public class PetController {
                 .contentType(ContentType.JSON);
     }
 
-    public Object getPetById() {
+    public Object getPetById(PetModel pet) {
         Response response = given(requestSpecification)
                 .get(String.valueOf(pet.getId()));
         if (response.statusCode() == 200) {
@@ -89,9 +87,9 @@ public class PetController {
         }
     }
 
-    public void getPetByStatus() {
+    public void getPetByStatus(PetStatus petStatus) {
        given(requestSpecification)
-               .get("findByStatus?status=" + String.valueOf(pet.getStatus()))
+               .get("findByStatus?status=" + petStatus.toString())
                .then()
                .statusCode(200)
                .contentType(ContentType.JSON);

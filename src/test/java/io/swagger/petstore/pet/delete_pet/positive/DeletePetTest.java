@@ -14,13 +14,13 @@ public class DeletePetTest extends PetDataGenerator {
     @Test
     public void deleteTest() {
 
-        PetModel testPet = petModelRandomGenerator(PetStatus.available);
+        PetModel pet = petModelRandomGenerator(PetStatus.available);
 
-        PetController petController = new PetController(testPet);
-        petController.addNewPet();
-        petController.deletePet(200);
+        PetController petController = new PetController();
+        petController.addNewPet(pet);
+        petController.deletePet(pet);
 
-        BadResponse petResponse = (BadResponse) petController.getPetById();
+        BadResponse petResponse = (BadResponse) petController.getPetById(pet);
 
         BadResponseAssert.assertThat(petResponse)
                 .hasCode(1)

@@ -48,8 +48,8 @@ io/swagger/petstore/order/get_order/positive/GetOrderTest.class
 io/swagger/petstore/user/login_logout/LoginTest.class
 io/swagger/petstore/controllers/pet/PetController.class
 io/swagger/petstore/pet/update_pet/positive/UpdatePetTest.class
+io/swagger/petstore/user/update_user/positive/UpdateUserTest.class
 io/swagger/petstore/utils/StaticData.class
-io/swagger/petstore/user/update_user/UpdateUserTest.class
 io/swagger/petstore/pet/add_pet/negative/BadRequestAddPetTest.class
 io/swagger/petstore/order/OrderDataGenerator.class
 io/swagger/petstore/assertions/user/UserModelAssert.class

@@ -83,7 +83,7 @@ public class OrderDataGenerator {
         petModel.setName(RandomStringUtils.randomAlphanumeric(6));
         petModel.setStatus(PetStatus.available.name());
 
-        new PetController(petModel).addNewPet();
+        new PetController().addNewPet(petModel);
 
         return orderModelGenerator(petModel.getId());
 

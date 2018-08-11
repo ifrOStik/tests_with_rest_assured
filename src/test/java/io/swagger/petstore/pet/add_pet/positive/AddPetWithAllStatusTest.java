@@ -27,9 +27,10 @@ public class AddPetWithAllStatusTest extends PetDataGenerator {
 
     private void test(PetStatus petStatus) {
 
-        PetModel testPet = petModelRandomGenerator(petStatus);
+        PetModel pet = petModelRandomGenerator(petStatus);
 
-        PetModel petResponse = new PetController(testPet).addNewPet();
-        PetModelAssert.assertThat(petResponse).isEqualTo(testPet);
+        PetModel petResponse = new PetController().addNewPet(pet);
+
+        PetModelAssert.assertThat(petResponse).isEqualTo(pet);
     }
 }

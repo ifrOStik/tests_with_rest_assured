@@ -14,17 +14,17 @@ public class UpdatePetTest extends PetDataGenerator {
     @Test
     public void updatePetTest() {
 
-        PetModel testPet = petModelRandomGenerator(PetStatus.available);
+        PetModel pet = petModelRandomGenerator(PetStatus.available);
 
-        PetController petController = new PetController(testPet);
-        petController.addNewPet();
+        PetController petController = new PetController();
+        petController.addNewPet(pet);
 
-        testPet.setStatus(PetStatus.sold.name());
-        testPet.setName(RandomStringUtils.randomAlphanumeric(6));
-        testPet.setPhotoUrls(petPhotoUrlGenerator());
+        pet.setStatus(PetStatus.sold.name());
+        pet.setName(RandomStringUtils.randomAlphanumeric(6));
+        pet.setPhotoUrls(petPhotoUrlGenerator());
 
-        PetModel petResponse = petController.updatePet(200);
+        PetModel petResponse = petController.updatePet(pet);
 
-        PetModelAssert.assertThat(petResponse).isEqualTo(testPet);
+        PetModelAssert.assertThat(petResponse).isEqualTo(pet);
     }
 }
