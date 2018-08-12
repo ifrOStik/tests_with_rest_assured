@@ -28,8 +28,8 @@ public class AddOrderWithAllStatusTest extends OrderDataGenerator {
 
         OrderModel order = orderModelGenerator(orderStatus);
 
-        OrderController orderController = new OrderController(order);
-        OrderModel response = orderController.addOrder();
+        OrderController orderController = new OrderController();
+        OrderModel response = orderController.addOrder(order);
 
         OrderModelAssert.assertThat(response)
                 .hasId(order.getId())

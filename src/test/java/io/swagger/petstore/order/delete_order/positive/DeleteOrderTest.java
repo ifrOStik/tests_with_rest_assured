@@ -14,11 +14,11 @@ public class DeleteOrderTest extends OrderDataGenerator {
 
         OrderModel order = orderModelGeneratorWithPet();
 
-        OrderController orderController = new OrderController(order);
-        orderController.addOrder();
-        orderController.deleteOrder();
+        OrderController orderController = new OrderController();
+        orderController.addOrder(order);
+        orderController.deleteOrder(order);
 
-        BadResponse responseOrder = (BadResponse) orderController.getOrder();
+        BadResponse responseOrder = (BadResponse) orderController.getOrder(order);
 
         BadResponseAssert.assertThat(responseOrder)
                 .hasCode(1)

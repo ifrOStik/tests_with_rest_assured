@@ -14,11 +14,11 @@ public class DeleteUserTest extends UserDataGenerator {
 
         UserModel user = userModelGenerator();
 
-        UserController userController = new UserController(user);
-        userController.addUser();
-        userController.deleteUser();
+        UserController userController = new UserController();
+        userController.addUser(user);
+        userController.deleteUser(user);
 
-        BadResponse userResponse = (BadResponse) userController.getUser();
+        BadResponse userResponse = (BadResponse) userController.getUser(user);
 
         BadResponseAssert.assertThat(userResponse)
                 .hasCode(1)

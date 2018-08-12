@@ -14,9 +14,9 @@ public class GetNotExistOrderTest extends OrderDataGenerator {
 
         OrderModel order = orderModelGeneratorWithPet();
 
-        OrderController orderController = new OrderController(order);
+        OrderController orderController = new OrderController();
 
-        BadResponse responseOrder = (BadResponse) orderController.getOrder();
+        BadResponse responseOrder = (BadResponse) orderController.getOrder(order);
 
         BadResponseAssert.assertThat(responseOrder)
                 .hasCode(1)

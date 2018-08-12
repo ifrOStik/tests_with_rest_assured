@@ -12,7 +12,7 @@ public class DeleteNotExistUserTest extends UserDataGenerator {
 
         UserModel user = userModelGenerator();
 
-        UserController userController = new UserController(user);
-        userController.deleteUser();
+        UserController userController = new UserController();
+        userController.deleteUser(user);
     }
 }

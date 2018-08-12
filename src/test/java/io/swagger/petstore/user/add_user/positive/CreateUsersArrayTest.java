@@ -24,9 +24,9 @@ public class CreateUsersArrayTest extends UserDataGenerator {
         UserController userController = new UserController();
         userController.addUsersArray(userModels);
 
-        UserModel responseUser1 = userController.getUserByName(user1.getUsername());
-        UserModel responseUser2 = userController.getUserByName(user2.getUsername());
-        UserModel responseUser3 = userController.getUserByName(user3.getUsername());
+        UserModel responseUser1 = (UserModel) userController.getUser(user1);
+        UserModel responseUser2 = (UserModel) userController.getUser(user2);
+        UserModel responseUser3 = (UserModel) userController.getUser(user3);
 
         UserModelAssert.assertThat(responseUser1).isEqualTo(user1);
         UserModelAssert.assertThat(responseUser2).isEqualTo(user2);

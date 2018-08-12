@@ -13,8 +13,8 @@ public class AddOrderTest extends OrderDataGenerator {
 
         OrderModel order = orderModelGeneratorWithPet();
 
-        OrderController orderController = new OrderController(order);
-        OrderModel response = orderController.addOrder();
+        OrderController orderController = new OrderController();
+        OrderModel response = orderController.addOrder(order);
 
         OrderModelAssert.assertThat(response).isEqualTo(order);
 

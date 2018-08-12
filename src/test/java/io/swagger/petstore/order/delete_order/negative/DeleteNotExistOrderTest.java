@@ -12,8 +12,7 @@ public class DeleteNotExistOrderTest extends OrderDataGenerator {
 
         OrderModel order = orderModelGeneratorWithPet();
 
-        OrderController orderController = new OrderController(order);
-        orderController.deleteOrder();
-        orderController.deleteOrder();
+        OrderController orderController = new OrderController();
+        orderController.deleteOrder(order);
     }
 }

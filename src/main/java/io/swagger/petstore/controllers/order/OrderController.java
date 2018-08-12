@@ -16,23 +16,17 @@ import static io.restassured.RestAssured.given;
 public class OrderController {
 
     private RequestSpecification requestSpecification;
-    private OrderModel order;
 
-    public OrderController(OrderModel order) {
+    public OrderController() {
         requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(StaticData.BASE_URI)
                 .setBasePath(StaticData.OrderPath)
                 .setContentType(ContentType.JSON)
                 .addHeader(StaticData.headerName, StaticData.headerValue)
                 .log(LogDetail.ALL).build();
-
-        this.order = order;
     }
 
-    public OrderController() {
-    }
-
-    public OrderModel addOrder() {
+    public OrderModel addOrder(OrderModel order) {
         return given(requestSpecification)
                 .body(order)
                 .when()
@@ -67,7 +61,7 @@ public class OrderController {
                 .and().extract().response().as(BadResponse.class);
     }
 
-    public Object getOrder() {
+    public Object getOrder(OrderModel order) {
         Response response = given(requestSpecification)
                 .get(String.valueOf(order.getId()));
 
@@ -82,7 +76,7 @@ public class OrderController {
         }
     }
 
-    public void deleteOrder() {
+    public void deleteOrder(OrderModel order) {
         Response response = given(requestSpecification)
                 .delete(String.valueOf(order.getId()));
 

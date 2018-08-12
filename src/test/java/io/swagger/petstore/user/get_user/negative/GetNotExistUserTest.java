@@ -14,8 +14,8 @@ public class GetNotExistUserTest extends UserDataGenerator {
 
         UserModel user = userModelGenerator();
 
-        UserController userController = new UserController(user);
-        BadResponse userResponse = (BadResponse) userController.getUser();
+        UserController userController = new UserController();
+        BadResponse userResponse = (BadResponse) userController.getUser(user);
 
         BadResponseAssert.assertThat(userResponse)
                 .hasCode(1)

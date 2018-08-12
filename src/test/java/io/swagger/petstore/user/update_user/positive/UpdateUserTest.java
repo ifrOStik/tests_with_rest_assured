@@ -13,16 +13,16 @@ public class UpdateUserTest extends UserDataGenerator {
 
         UserModel user = userModelGenerator();
 
-        UserController userController = new UserController(user);
-        userController.addUser();
+        UserController userController = new UserController();
+        userController.addUser(user);
 
         user.setEmail(generateEmail());
         user.setPhone(generatePhone());
         user.setLastName(generateLastName());
 
-        userController.updateUser();
+        userController.updateUser(user);
 
-        UserModel userResponse = (UserModel) userController.getUser();
+        UserModel userResponse = (UserModel) userController.getUser(user);
 
         UserModelAssert.assertThat(userResponse).isEqualTo(user);
     }

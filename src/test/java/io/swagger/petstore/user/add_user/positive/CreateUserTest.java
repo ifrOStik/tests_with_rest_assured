@@ -13,10 +13,10 @@ public class CreateUserTest extends UserDataGenerator {
 
         UserModel user = userModelGenerator();
 
-        UserController userController = new UserController(user);
-        userController.addUser();
+        UserController userController = new UserController();
+        userController.addUser(user);
 
-        UserModel response = (UserModel) userController.getUser();
+        UserModel response = (UserModel) userController.getUser(user);
 
         UserModelAssert.assertThat(response).isEqualTo(user);
     }

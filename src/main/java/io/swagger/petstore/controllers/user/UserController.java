@@ -18,18 +18,6 @@ import static io.restassured.RestAssured.given;
 public class UserController {
 
     private RequestSpecification requestSpecification;
-    private UserModel user;
-
-    public UserController(UserModel user) {
-        requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
-                .setBasePath(StaticData.UserPath)
-                .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
-                .log(LogDetail.ALL).build();
-
-        this.user = user;
-    }
 
     public UserController() {
         requestSpecification = new RequestSpecBuilder()
@@ -48,7 +36,7 @@ public class UserController {
                 .addHeader(StaticData.headerName, StaticData.headerValue)
                 .log(LogDetail.ALL).build();
 
-        given()
+            given()
                 .body(userModels)
                 .when()
                 .post()
@@ -65,7 +53,7 @@ public class UserController {
                 .addHeader(StaticData.headerName, StaticData.headerValue)
                 .log(LogDetail.ALL).build();
 
-        given()
+            given()
                 .body(userModels)
                 .when()
                 .post()
@@ -74,7 +62,7 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
-    public void addUser() {
+    public void addUser(UserModel user) {
         given(requestSpecification)
                 .body(user)
                 .when()
@@ -84,7 +72,7 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
-    public Object getUser() {
+    public Object getUser(UserModel user) {
         Response response = given(requestSpecification)
                 .when()
                 .get(user.getUsername());
@@ -102,20 +90,10 @@ public class UserController {
         }
     }
 
-    public UserModel getUserByName(String userName) {
-        return given(requestSpecification)
-                .when()
-                .get(userName)
-                .then()
-                .statusCode(200)
-                .contentType(ContentType.JSON)
-                .and().extract().response().as(UserModel.class);
-    }
-
-    public void loginUser(String username, String password) {
+    public void loginUser(UserModel user) {
         given(requestSpecification)
                 .when()
-                .get("login?username=" + username + "&password=" + password)
+                .get("login?username=" +  user.getUsername() + "&password=" + user.getPassword())
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
@@ -132,7 +110,7 @@ public class UserController {
                 .and().extract().response().prettyPrint();
     }
 
-    public void updateUser() {
+    public void updateUser(UserModel user) {
         given(requestSpecification)
                 .body(user)
                 .when()
@@ -142,7 +120,7 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
-    public void deleteUser() {
+    public void deleteUser(UserModel user) {
         Response response = given(requestSpecification)
                 .when()
                 .delete(user.getUsername());

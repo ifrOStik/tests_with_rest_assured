@@ -12,9 +12,9 @@ public class LoginTest extends UserDataGenerator {
 
             UserModel user = userModelGenerator();
 
-            UserController userController = new UserController(user);
-            userController.addUser();
+            UserController userController = new UserController();
+            userController.addUser(user);
 
-            userController.loginUser(user.getUsername(), user.getPassword());
+            userController.loginUser(user);
         }
 }

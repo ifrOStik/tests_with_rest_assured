@@ -13,10 +13,10 @@ public class GetOrderTest extends OrderDataGenerator {
 
         OrderModel order = orderModelGeneratorWithPet();
 
-        OrderController orderController = new OrderController(order);
-        orderController.addOrder();
+        OrderController orderController = new OrderController();
+        orderController.addOrder(order);
 
-        OrderModel responseOrder = (OrderModel) orderController.getOrder();
+        OrderModel responseOrder = (OrderModel) orderController.getOrder(order);
 
         OrderModelAssert.assertThat(responseOrder)
                 .hasStatus(order.getStatus())
