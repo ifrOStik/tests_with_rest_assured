@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: io.swagger.petstore.user.add_user.positive.CreateUserTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.521 s - in io.swagger.petstore.user.add_user.positive.CreateUserTest

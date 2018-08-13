@@ -16,8 +16,6 @@ public class AddOrderTest extends OrderDataGenerator {
         OrderController orderController = new OrderController();
         OrderModel response = orderController.addOrder(order);
 
-        OrderModelAssert.assertThat(response).isEqualTo(order);
-
         OrderModelAssert.assertThat(response)
                 .hasId(order.getId())
                 .hasPetId(order.getPetId())

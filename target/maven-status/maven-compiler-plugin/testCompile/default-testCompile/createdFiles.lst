@@ -1,7 +1,7 @@
 io/swagger/petstore/user/get_user/positive/GetUserTest.class
-io/swagger/petstore/user/delete_user/negative/DeleteNotExistUserTest.class
 io/swagger/petstore/pet/add_pet/negative/ServerErrorTest.class
 io/swagger/petstore/pet/get_pet/negative/GetNotExistPetTest.class
+io/swagger/petstore/user/delete_user/negative/DeleteNotExistUserTest.class
 io/swagger/petstore/models/user/UserModel.class
 io/swagger/petstore/pet/delete_pet/negative/DeleteNonexistentPetTest.class
 io/swagger/petstore/assertions/pet/AbstractPetModelAssert.class
@@ -16,8 +16,8 @@ io/swagger/petstore/assertions/pet/AbstractCategoryAssert.class
 io/swagger/petstore/order/delete_order/positive/DeleteOrderTest.class
 io/swagger/petstore/order/delete_order/negative/DeleteNotExistOrderTest.class
 io/swagger/petstore/user/UserDataGenerator.class
-io/swagger/petstore/user/add_user/positive/CreateUsersListTest.class
 io/swagger/petstore/models/order/OrderModel.class
+io/swagger/petstore/user/add_user/positive/CreateUsersListTest.class
 io/swagger/petstore/controllers/order/OrderController.class
 io/swagger/petstore/pet/update_pet/positive/UpdatePetByIdTest.class
 io/swagger/petstore/pet/PetDataGenerator.class
@@ -40,8 +40,8 @@ io/swagger/petstore/pet/get_pet/positive/GetPetByIdTest.class
 io/swagger/petstore/user/add_user/positive/CreateUserTest.class
 io/swagger/petstore/pet/delete_pet/positive/DeletePetTest.class
 io/swagger/petstore/assertions/order/AbstractOrderModelAssert.class
-io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.class
 io/swagger/petstore/assertions/order/OrderModelAssert.class
+io/swagger/petstore/order/add_order/negative/InvalidInputAddOrderTest.class
 io/swagger/petstore/order/add_order/positive/AddOrderWithAllStatusTest.class
 io/swagger/petstore/order/get_list_inventory/GetListInventoryTest.class
 io/swagger/petstore/order/get_order/positive/GetOrderTest.class

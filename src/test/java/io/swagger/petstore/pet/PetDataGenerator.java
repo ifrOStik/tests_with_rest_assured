@@ -1,5 +1,6 @@
 package io.swagger.petstore.pet;
 
+import io.qameta.allure.Step;
 import io.swagger.petstore.models.pet.Category;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.models.pet.TagsItem;

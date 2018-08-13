@@ -1,9 +1,9 @@
 io/swagger/petstore/assertions/bad_response/BadResponseAssert.class
 io/swagger/petstore/assertions/pet/AbstractCategoryAssert.class
 io/swagger/petstore/assertions/pet/AbstractTagsItemAssert.class
-io/swagger/petstore/models/user/UserModel.class
-io/swagger/petstore/models/pet/PetModel.class
 io/swagger/petstore/controllers/pet/PetController.class
+io/swagger/petstore/models/pet/PetModel.class
+io/swagger/petstore/models/user/UserModel.class
 io/swagger/petstore/models/order/OrderModel.class
 io/swagger/petstore/assertions/bad_response/AbstractBadResponseModelAssert.class
 io/swagger/petstore/assertions/pet/AbstractPetModelAssert.class
@@ -11,11 +11,11 @@ io/swagger/petstore/controllers/user/UserController.class
 io/swagger/petstore/assertions/user/AbstractUserModelAssert.class
 io/swagger/petstore/assertions/pet/CategoryAssert.class
 io/swagger/petstore/assertions/pet/PetModelAssert.class
-io/swagger/petstore/utils/StaticData.class
 io/swagger/petstore/models/bad_response/BadResponse.class
+io/swagger/petstore/utils/StaticData.class
 io/swagger/petstore/assertions/pet/TagsItemAssert.class
-io/swagger/petstore/models/pet/TagsItem.class
 io/swagger/petstore/controllers/order/OrderController.class
+io/swagger/petstore/models/pet/TagsItem.class
 io/swagger/petstore/utils/PetStatus.class
 io/swagger/petstore/models/pet/Category.class
 io/swagger/petstore/assertions/order/AbstractOrderModelAssert.class

@@ -1,5 +1,6 @@
 package io.swagger.petstore.pet.add_pet.negative;
 
+import io.qameta.allure.Features;
 import io.swagger.petstore.assertions.bad_response.BadResponseAssert;
 import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.bad_response.BadResponse;
