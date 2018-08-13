@@ -3,13 +3,18 @@ package io.swagger.petstore.pet.add_pet.positive;
 import io.qameta.allure.*;
 import io.qameta.allure.junit4.DisplayName;
 import io.swagger.petstore.assertions.pet.PetModelAssert;
+import io.swagger.petstore.category.PetTestsCategory;
+import io.swagger.petstore.category.PositiveCategory;
 import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.pet.PetDataGenerator;
 import io.swagger.petstore.utils.PetStatus;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
-@Feature("Pet tests")
+@Category({PositiveCategory.class, PetTestsCategory.class})
+@Feature("Pet tests : Positive")
+@Story("Добавить питомцев с разными статусами")
 @DisplayName("Добавить питомцев с разными статусами")
 public class AddPetWithAllStatusTest extends PetDataGenerator {
 

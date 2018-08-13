@@ -1,6 +1,7 @@
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/add_user/positive/CreateUsersArrayTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/utils/PetStatus.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/user/AbstractUserModelAssert.java
+/Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/category/StoreTestsCategory.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/login_logout/LoginTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/add_order/positive/AddOrderWithAllStatusTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/TagsItemAssert.java
@@ -19,8 +20,10 @@
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/AbstractTagsItemAssert.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/models/order/OrderModel.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/CategoryAssert.java
+/Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/category/NegativeCategory.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/bad_response/BadResponseAssert.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/OrderDataGenerator.java
+/Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/category/UserTestsCategory.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/order/get_order/positive/GetOrderTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/get_user/positive/GetUserTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/get_user/negative/GetNotExistUserTest.java
@@ -36,8 +39,10 @@
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/login_logout/LogoutTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/bad_response/AbstractBadResponseModelAssert.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/add_pet/positive/AddPetWithAllStatusTest.java
+/Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/category/FullScopeCategory.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/user/add_user/positive/CreateUsersListTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/PetModelAssert.java
+/Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/category/PetTestsCategory.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/controllers/pet/PetController.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/delete_pet/positive/DeletePetWithAllParametersTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/order/AbstractOrderModelAssert.java
@@ -54,3 +59,4 @@
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/test/java/io/swagger/petstore/pet/get_pet/positive/GetPetByStatusTest.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/assertions/pet/AbstractPetModelAssert.java
 /Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/utils/StaticData.java
+/Users/temaustimcik/Desktop/selenium/tests_with_rest_assured/src/main/java/io/swagger/petstore/category/PositiveCategory.java

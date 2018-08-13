@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: io.swagger.petstore.pet.add_pet.positive.AddPetWithAllStatusTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.234 s - in io.swagger.petstore.pet.add_pet.positive.AddPetWithAllStatusTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.151 s - in io.swagger.petstore.pet.add_pet.positive.AddPetWithAllStatusTest

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: io.swagger.petstore.user.get_user.negative.GetNotExistUserTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.222 s - in io.swagger.petstore.user.get_user.negative.GetNotExistUserTest
