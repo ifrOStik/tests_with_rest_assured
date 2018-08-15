@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: io.swagger.petstore.pet.add_pet.negative.BadRequestAddPetTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.731 s - in io.swagger.petstore.pet.add_pet.negative.BadRequestAddPetTest
