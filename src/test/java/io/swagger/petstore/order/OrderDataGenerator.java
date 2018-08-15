@@ -23,12 +23,6 @@ public class OrderDataGenerator {
         return RandomUtils.nextInt(0,9);
     }
 
-    public String shipDateGenerator() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSZ");
-        Date newDate = new Date();
-        return dateFormat.format(newDate);
-    }
-
     public String statusOrderGenerator() {
 
         Random random=new Random();
@@ -56,7 +50,6 @@ public class OrderDataGenerator {
         order.setId(orderIdGenerator());
         order.setPetId(petId);
         order.setQuantity(quantityGenerator());
-        order.setShipDate(shipDateGenerator());
         order.setStatus(statusOrderGenerator());
         order.setComplete(statusCompleteGenerator());
 
@@ -69,7 +62,6 @@ public class OrderDataGenerator {
         order.setId(orderIdGenerator());
         order.setPetId(petId);
         order.setQuantity(quantityGenerator());
-        order.setShipDate(shipDateGenerator());
         order.setStatus(orderStatus.name());
         order.setComplete(statusComplete);
 
@@ -100,7 +92,6 @@ public class OrderDataGenerator {
         order.setId(orderIdGenerator());
         order.setPetId(petModel.getId());
         order.setQuantity(quantityGenerator());
-        order.setShipDate(shipDateGenerator());
         order.setStatus(orderStatus.name());
         order.setComplete(statusCompleteGenerator());
 
