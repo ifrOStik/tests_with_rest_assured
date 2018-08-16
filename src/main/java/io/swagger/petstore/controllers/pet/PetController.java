@@ -9,7 +9,7 @@ import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.utils.PetStatus;
-import io.swagger.petstore.utils.StaticData;
+import io.swagger.petstore.utils.StaticPath;
 
 import static io.restassured.RestAssured.given;
 
@@ -19,10 +19,10 @@ public class PetController {
 
     public PetController() {
         requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
-                .setBasePath(StaticData.PatPath)
+                .setBaseUri(StaticPath.BASE_URI)
+                .setBasePath(StaticPath.PatPath)
                 .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
     }
 

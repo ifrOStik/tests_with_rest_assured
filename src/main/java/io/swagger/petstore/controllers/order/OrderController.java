@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.order.OrderModel;
-import io.swagger.petstore.utils.StaticData;
+import io.swagger.petstore.utils.StaticPath;
 
 
 import static io.restassured.RestAssured.given;
@@ -19,10 +19,10 @@ public class OrderController {
 
     public OrderController() {
         requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
-                .setBasePath(StaticData.OrderPath)
+                .setBaseUri(StaticPath.BASE_URI)
+                .setBasePath(StaticPath.OrderPath)
                 .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
     }
 
@@ -40,10 +40,10 @@ public class OrderController {
     public BadResponse addOrderInvalidInput() {
 
         RestAssured.requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
-                .setBasePath(StaticData.OrderPath)
+                .setBaseUri(StaticPath.BASE_URI)
+                .setBasePath(StaticPath.OrderPath)
                 .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
 
         return given()
@@ -94,10 +94,10 @@ public class OrderController {
 
     public void getListInventory() {
         RestAssured.requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
+                .setBaseUri(StaticPath.BASE_URI)
                 .setBasePath("/v2/store/inventory")
                 .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
 
         given()

@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.user.UserModel;
-import io.swagger.petstore.utils.StaticData;
+import io.swagger.petstore.utils.StaticPath;
 
 
 import java.util.ArrayList;
@@ -21,19 +21,19 @@ public class UserController {
 
     public UserController() {
         requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
-                .setBasePath(StaticData.UserPath)
+                .setBaseUri(StaticPath.BASE_URI)
+                .setBasePath(StaticPath.UserPath)
                 .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
     }
 
     public void addUsersList(ArrayList<UserModel> userModels) {
         RestAssured.requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
+                .setBaseUri(StaticPath.BASE_URI)
                 .setBasePath("/v2/user/createWithList")
                 .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
 
             given()
@@ -47,10 +47,10 @@ public class UserController {
 
     public void addUsersArray(UserModel[] userModels) {
         RestAssured.requestSpecification = new RequestSpecBuilder()
-                .setBaseUri(StaticData.BASE_URI)
+                .setBaseUri(StaticPath.BASE_URI)
                 .setBasePath("/v2/user/createWithArray")
                 .setContentType(ContentType.JSON)
-                .addHeader(StaticData.headerName, StaticData.headerValue)
+                .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
 
             given()
