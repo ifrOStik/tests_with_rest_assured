@@ -20,7 +20,12 @@ public class AddPetWithAllStatusTest extends PetDataGenerator {
 
     @Test
     @DisplayName("Тест : Добавить питомца в статуса AVAILABLE")
+<<<<<<< Updated upstream
     @Description("Добавить питомца в статусе AVAILABLE, с основными параметрами и проверить возвращаемый объект питомца")
+=======
+    @Description("Тест добавляет питомца в статусе AVAILABLE, с основными параметрами и проверяет " +
+            "возвращаемый объект питомца с тем что был сгенерирован")
+>>>>>>> Stashed changes
     public void addNewPetAvailableStatus() {
         test(PetStatus.available);
     }
