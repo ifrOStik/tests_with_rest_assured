@@ -20,34 +20,31 @@ public class AddPetWithAllStatusTest extends PetDataGenerator {
 
     @Test
     @DisplayName("Тест : Добавить питомца в статуса AVAILABLE")
-    @Description("Данный тест добавляет питомца в статусе AVAILABLE, " +
-            "с основными параметрами и проверяет" +
-            "возвращаемый объект питомца с тем что был сгенерирован")
+    @Description("Добавить питомца в статусе AVAILABLE, с основными параметрами и проверить возвращаемый объект питомца")
     public void addNewPetAvailableStatus() {
         test(PetStatus.available);
     }
 
     @Test
     @DisplayName("Тест : Добавить питомца в статуса PENDING")
-    @Description("Добавить питомца в статусе PENDING")
+    @Description("Добавить питомца в статусе PENDING, с основными параметрами и проверить возвращаемый объект питомца")
     public void addNewPetPendingStatus() {
         test(PetStatus.pending);
     }
 
     @Test
     @DisplayName("Тест : Добавить питомца в статуса SOLD")
-    @Description("Добавить питомца в статусе SOLD")
+    @Description("Добавить питомца в статусе SOLD, с основными параметрами и проверить возвращаемый объект питомца")
     public void addNewPetSoldStatus() {
         test(PetStatus.sold);
     }
 
-    @Step("Добавить питомца в магазин")
     private void test(PetStatus petStatus) {
 
         PetModel pet = petModelRandomGenerator(petStatus);
 
         PetModel petResponse = new PetController().addNewPet(pet);
 
-        PetModelAssert.assertThat(petResponse).isEqualTo(pet);
+        checkResultPetModel(petResponse, pet);
     }
 }

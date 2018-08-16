@@ -9,6 +9,7 @@ import io.swagger.petstore.category.NegativeCategory;
 import io.swagger.petstore.category.PetTestsCategory;
 import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.bad_response.BadResponse;
+import io.swagger.petstore.pet.PetDataGenerator;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -16,18 +17,16 @@ import org.junit.experimental.categories.Category;
 @Feature("Pet tests : Negative")
 @Story("Отправка невелидного запроса, без параметра")
 @DisplayName("Отправка невелидного запроса, без параметра")
-public class BadRequestAddPetTest {
+public class BadRequestAddPetTest extends PetDataGenerator{
 
     @Test
     @DisplayName("Тест : Отправка невалидноно запроса")
     @Description("Отправка невалидноно запроса, проверка ожидаемого результиата 400 ошибка")
     public void badRequestTest() {
 
-        BadResponse response = new  PetController().badRequest();
+        BadResponse actualResponse = new  PetController().badRequest();
+        BadResponse expectedResponse = new BadResponse(400, "unknown", "bad input");
 
-        BadResponseAssert.assertThat(response)
-                .hasCode(400)
-                .hasMessage("bad input")
-                .hasType("unknown");
+        checkErrorResponse(actualResponse, expectedResponse);
     }
 }

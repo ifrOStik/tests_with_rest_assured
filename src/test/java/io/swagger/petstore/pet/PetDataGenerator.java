@@ -1,6 +1,9 @@
 package io.swagger.petstore.pet;
 
 import io.qameta.allure.Step;
+import io.swagger.petstore.assertions.bad_response.BadResponseAssert;
+import io.swagger.petstore.assertions.pet.PetModelAssert;
+import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.pet.Category;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.models.pet.TagsItem;
@@ -43,6 +46,7 @@ public class PetDataGenerator {
         return tagsItemList;
     }
 
+    @Step("Генерация питомца с обязательными данными")
     public PetModel petModelRandomGenerator(PetStatus petStatus) {
         PetModel petModel = new PetModel();
         petModel.setId(petIdGenerator());
@@ -52,6 +56,7 @@ public class PetDataGenerator {
         return petModel;
     }
 
+    @Step("Генерация питомца со всеми данными")
     public PetModel petModelGeneratorWithAllParameters(PetStatus petStatus) {
         PetModel petModel = new PetModel();
         petModel.setId(petIdGenerator());
@@ -61,5 +66,15 @@ public class PetDataGenerator {
         petModel.setTags(petTagItemGenerator());
         petModel.setStatus(petStatus.name());
         return petModel;
+    }
+
+    @Step("Проверка ожидаемого и действительного результата")
+    public void checkResultPetModel(PetModel actualResponse, PetModel expectedResult) {
+        PetModelAssert.assertThat(actualResponse).isEqualTo(expectedResult);
+    }
+
+    @Step("Проверка ожидаемого и действительного результат")
+    public void checkErrorResponse(BadResponse actualResult, BadResponse expextedResult) {
+        BadResponseAssert.assertThat(actualResult).isEqualTo(expextedResult);
     }
 }

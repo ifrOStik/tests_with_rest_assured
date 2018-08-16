@@ -1,5 +1,6 @@
 package io.swagger.petstore.controllers.pet;
 
+import io.qameta.allure.Step;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
@@ -25,6 +26,7 @@ public class PetController {
                 .log(LogDetail.ALL).build();
     }
 
+    @Step("Добавить питомца в магазин")
     public PetModel addNewPet(PetModel pet) {
          return given(requestSpecification)
                  .body(pet)
@@ -37,6 +39,7 @@ public class PetController {
                  .extract().response().as(PetModel.class);
     }
 
+    @Step("Удалить питомца из магазина")
     public void deletePet(PetModel pet) {
         Response response = given(requestSpecification)
                 .when()
@@ -53,6 +56,7 @@ public class PetController {
         }
     }
 
+    @Step("Обновить питомца в магазине")
     public PetModel updatePet(PetModel pet) {
         return given(requestSpecification)
                 .body(pet)
@@ -64,6 +68,7 @@ public class PetController {
                 .extract().response().as(PetModel.class);
     }
 
+    @Step("Обновить питомца с ID")
     public void updatePetById(PetModel pet) {
         given(requestSpecification)
                 .body(pet)
@@ -73,6 +78,7 @@ public class PetController {
                 .contentType(ContentType.JSON);
     }
 
+    @Step("Выбрать питомца")
     public Object getPetById(PetModel pet) {
         Response response = given(requestSpecification)
                 .get(String.valueOf(pet.getId()));
@@ -87,6 +93,7 @@ public class PetController {
         }
     }
 
+    @Step("Получить питомцев в статусе")
     public void getPetByStatus(PetStatus petStatus) {
        given(requestSpecification)
                .get("findByStatus?status=" + petStatus.toString())
@@ -95,6 +102,7 @@ public class PetController {
                .contentType(ContentType.JSON);
     }
 
+    @Step("Отправить запрос без поля Статус")
     public BadResponse badRequest() {
         return given(requestSpecification)
                 .body("{\n" +
@@ -110,6 +118,7 @@ public class PetController {
                 .and().extract().response().as(BadResponse.class);
     }
 
+    @Step("Отправить запрос с неверныйми данными")
     public BadResponse serverErrorRequest() {
         return given(requestSpecification)
                 .body("{\n" +
