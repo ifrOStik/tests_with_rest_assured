@@ -1,17 +1,28 @@
 package io.swagger.petstore.pet.delete_pet.positive;
 
-import io.swagger.petstore.assertions.bad_response.BadResponseAssert;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import io.qameta.allure.junit4.DisplayName;
+import io.swagger.petstore.category.PetTestsCategory;
+import io.swagger.petstore.category.PositiveCategory;
 import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.pet.PetDataGenerator;
 import io.swagger.petstore.utils.PetStatus;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
-
+@Category({PositiveCategory.class, PetTestsCategory.class})
+@Feature("Pet tests : Positive")
+@Story("Delete pet with primary parameters")
+@DisplayName("Delete pet with primary parameters")
 public class DeletePetTest extends PetDataGenerator {
 
     @Test
+    @DisplayName("Test : Delete pet with primary parameters")
+    @Description("Delete pet, check that response will be null")
     public void deleteTest() {
 
         PetModel pet = petModelRandomGenerator(PetStatus.available);
@@ -20,11 +31,10 @@ public class DeletePetTest extends PetDataGenerator {
         petController.addNewPet(pet);
         petController.deletePet(pet);
 
-        BadResponse petResponse = (BadResponse) petController.getPetById(pet);
+        BadResponse petActualResponse = (BadResponse) petController.getPetById(pet);
 
-        BadResponseAssert.assertThat(petResponse)
-                .hasCode(1)
-                .hasType("error")
-                .hasMessage("Pet not found");
+        BadResponse expectedResponse = new BadResponse(1, "error", "Pet not found");
+
+        checkErrorResponse(petActualResponse, expectedResponse);
     }
 }

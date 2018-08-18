@@ -2,7 +2,6 @@ package io.swagger.petstore.pet.add_pet.positive;
 
 import io.qameta.allure.*;
 import io.qameta.allure.junit4.DisplayName;
-import io.swagger.petstore.assertions.pet.PetModelAssert;
 import io.swagger.petstore.category.PetTestsCategory;
 import io.swagger.petstore.category.PositiveCategory;
 import io.swagger.petstore.controllers.pet.PetController;
@@ -14,32 +13,27 @@ import org.junit.experimental.categories.Category;
 
 @Category({PositiveCategory.class, PetTestsCategory.class})
 @Feature("Pet tests : Positive")
-@Story("Добавить питомцев с разными статусами")
-@DisplayName("Добавить питомцев с разными статусами")
+@Story("Create pets with another status")
+@DisplayName("Create pets with another status")
 public class AddPetWithAllStatusTest extends PetDataGenerator {
 
     @Test
-    @DisplayName("Тест : Добавить питомца в статуса AVAILABLE")
-<<<<<<< Updated upstream
-    @Description("Добавить питомца в статусе AVAILABLE, с основными параметрами и проверить возвращаемый объект питомца")
-=======
-    @Description("Тест добавляет питомца в статусе AVAILABLE, с основными параметрами и проверяет " +
-            "возвращаемый объект питомца с тем что был сгенерирован")
->>>>>>> Stashed changes
+    @DisplayName("Test : Create pet in the AVAILABLE status")
+    @Description("Create pet in the AVAILABLE status, with primary parameters and check the returned pet object")
     public void addNewPetAvailableStatus() {
         test(PetStatus.available);
     }
 
     @Test
-    @DisplayName("Тест : Добавить питомца в статуса PENDING")
-    @Description("Добавить питомца в статусе PENDING, с основными параметрами и проверить возвращаемый объект питомца")
+    @DisplayName("Test : Create pet in the PENDING status")
+    @Description("Create pet in the PENDING status, with primary parameters and check the returned pet object")
     public void addNewPetPendingStatus() {
         test(PetStatus.pending);
     }
 
     @Test
-    @DisplayName("Тест : Добавить питомца в статуса SOLD")
-    @Description("Добавить питомца в статусе SOLD, с основными параметрами и проверить возвращаемый объект питомца")
+    @DisplayName("Test : Create pet in the SOLD status")
+    @Description("Create pet in the SOLD status, with primary parameters and check the returned pet object")
     public void addNewPetSoldStatus() {
         test(PetStatus.sold);
     }

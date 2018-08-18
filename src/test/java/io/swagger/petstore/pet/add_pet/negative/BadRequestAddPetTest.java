@@ -15,13 +15,13 @@ import org.junit.experimental.categories.Category;
 
 @Category({NegativeCategory.class, PetTestsCategory.class})
 @Feature("Pet tests : Negative")
-@Story("Отправка невелидного запроса, без параметра")
-@DisplayName("Отправка невелидного запроса, без параметра")
+@Story("Sending a invalid request, without one parameter")
+@DisplayName("Sending a invalid request, without one parameter")
 public class BadRequestAddPetTest extends PetDataGenerator{
 
     @Test
-    @DisplayName("Тест : Отправка невалидноно запроса")
-    @Description("Отправка невалидноно запроса, проверка ожидаемого результиата 400 ошибка")
+    @DisplayName("Test : Sending a invalid request, without parameter")
+    @Description("Sending a invalid request, check expected result the 400 error")
     public void badRequestTest() {
 
         BadResponse actualResponse = new  PetController().badRequest();

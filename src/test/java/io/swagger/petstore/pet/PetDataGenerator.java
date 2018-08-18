@@ -46,7 +46,7 @@ public class PetDataGenerator {
         return tagsItemList;
     }
 
-    @Step("Генерация питомца с обязательными данными")
+    @Step("Generate pet with primary parameters")
     public PetModel petModelRandomGenerator(PetStatus petStatus) {
         PetModel petModel = new PetModel();
         petModel.setId(petIdGenerator());
@@ -56,7 +56,7 @@ public class PetDataGenerator {
         return petModel;
     }
 
-    @Step("Генерация питомца со всеми данными")
+    @Step("Generate pet with all parameters")
     public PetModel petModelGeneratorWithAllParameters(PetStatus petStatus) {
         PetModel petModel = new PetModel();
         petModel.setId(petIdGenerator());
@@ -68,13 +68,13 @@ public class PetDataGenerator {
         return petModel;
     }
 
-    @Step("Проверка ожидаемого и действительного результата")
+    @Step("Check expected and actual result")
     public void checkResultPetModel(PetModel actualResponse, PetModel expectedResult) {
         PetModelAssert.assertThat(actualResponse).isEqualTo(expectedResult);
     }
 
-    @Step("Проверка ожидаемого и действительного результат")
-    public void checkErrorResponse(BadResponse actualResult, BadResponse expextedResult) {
-        BadResponseAssert.assertThat(actualResult).isEqualTo(expextedResult);
+    @Step("Check expected and actual result")
+    public void checkErrorResponse(BadResponse actualResult, BadResponse expectedResult) {
+        BadResponseAssert.assertThat(actualResult).isEqualToComparingFieldByField(expectedResult);
     }
 }
