@@ -12,9 +12,6 @@ import io.swagger.petstore.utils.PetStatus;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Random;
 
 public class OrderDataGenerator {
@@ -84,8 +81,14 @@ public class OrderDataGenerator {
 
         new PetController().addNewPet(petModel);
 
-        return orderModelGenerator(petModel.getId());
+        OrderModel order = new OrderModel();
+        order.setId(orderIdGenerator());
+        order.setPetId(petModel.getId());
+        order.setQuantity(quantityGenerator());
+        order.setStatus(statusOrderGenerator());
+        order.setComplete(statusCompleteGenerator());
 
+        return order;
     }
 
     @Step("Generate order with primary parameters")
