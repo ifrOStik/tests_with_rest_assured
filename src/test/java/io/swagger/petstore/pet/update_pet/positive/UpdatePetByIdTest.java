@@ -22,7 +22,7 @@ public class UpdatePetByIdTest extends PetDataGenerator {
 
     @Test
     @DisplayName("Test : Update pet by ID")
-    @Description("Update pet in the shop by ID and check that response pet is equals created pet")
+    @Description("Update pet in the shop by ID and check that response pet is equals updated pet")
     public void updatePetTest() {
 
         PetModel pet = petModelRandomGenerator(PetStatus.available);

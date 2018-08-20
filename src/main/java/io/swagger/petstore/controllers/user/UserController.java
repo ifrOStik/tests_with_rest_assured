@@ -1,5 +1,6 @@
 package io.swagger.petstore.controllers.user;
 
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
@@ -28,6 +29,7 @@ public class UserController {
                 .log(LogDetail.ALL).build();
     }
 
+    @Step("Request : Create user list")
     public void addUsersList(ArrayList<UserModel> userModels) {
         RestAssured.requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(StaticPath.BASE_URI)
@@ -45,6 +47,7 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
+    @Step("Request : Create user array")
     public void addUsersArray(UserModel[] userModels) {
         RestAssured.requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(StaticPath.BASE_URI)
@@ -62,6 +65,7 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
+    @Step("Request : Create new user")
     public void addUser(UserModel user) {
         given(requestSpecification)
                 .body(user)
@@ -72,6 +76,7 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
+    @Step("Request : Get user")
     public Object getUser(UserModel user) {
         Response response = given(requestSpecification)
                 .when()
@@ -90,6 +95,7 @@ public class UserController {
         }
     }
 
+    @Step("Request : Login in the system")
     public void loginUser(UserModel user) {
         given(requestSpecification)
                 .when()
@@ -100,6 +106,7 @@ public class UserController {
                 .and().extract().response().prettyPrint();
     }
 
+    @Step("Request : Logout from the system")
     public void logoutUser() {
         given(requestSpecification)
                 .when()
@@ -110,6 +117,7 @@ public class UserController {
                 .and().extract().response().prettyPrint();
     }
 
+    @Step("Request : Update user")
     public void updateUser(UserModel user) {
         given(requestSpecification)
                 .body(user)
@@ -120,6 +128,7 @@ public class UserController {
                 .contentType(ContentType.JSON);
     }
 
+    @Step("Request : Delete user")
     public void deleteUser(UserModel user) {
         Response response = given(requestSpecification)
                 .when()

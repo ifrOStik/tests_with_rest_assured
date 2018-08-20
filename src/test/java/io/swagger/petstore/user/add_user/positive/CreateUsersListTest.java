@@ -1,16 +1,28 @@
 package io.swagger.petstore.user.add_user.positive;
 
-import io.swagger.petstore.assertions.user.UserModelAssert;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+import io.qameta.allure.junit4.DisplayName;
+import io.swagger.petstore.category.PositiveCategory;
+import io.swagger.petstore.category.UserTestsCategory;
 import io.swagger.petstore.controllers.user.UserController;
 import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.user.UserDataGenerator;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import java.util.ArrayList;
 
+@Category({PositiveCategory.class, UserTestsCategory.class})
+@Feature("User tests : Positive")
+@Story("Create new user list")
+@DisplayName("Create new user list")
 public class CreateUsersListTest extends UserDataGenerator {
 
     @Test
+    @DisplayName("Test : Create new user list")
+    @Description("Create new user list and check that response user is equals created user")
     public void addListUsers() {
 
         UserModel user1 = userModelGenerator();
@@ -25,12 +37,12 @@ public class CreateUsersListTest extends UserDataGenerator {
         UserController userController = new UserController();
         userController.addUsersList(userModelArrayList);
 
-        UserModel responseUser1 = (UserModel) userController.getUser(user1);
-        UserModel responseUser2 = (UserModel) userController.getUser(user2);
-        UserModel responseUser3 = (UserModel) userController.getUser(user3);
+        UserModel actualUser1Response = (UserModel) userController.getUser(user1);
+        UserModel actualUser2Response = (UserModel) userController.getUser(user2);
+        UserModel actualUser3Response = (UserModel) userController.getUser(user3);
 
-        UserModelAssert.assertThat(responseUser1).isEqualTo(user1);
-        UserModelAssert.assertThat(responseUser2).isEqualTo(user2);
-        UserModelAssert.assertThat(responseUser3).isEqualTo(user3);
+        checkResultUserModel(actualUser1Response, user1);
+        checkResultUserModel(actualUser2Response, user2);
+        checkResultUserModel(actualUser3Response, user3);
     }
 }

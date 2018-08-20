@@ -1,5 +1,9 @@
 package io.swagger.petstore.user;
 
+import io.qameta.allure.Step;
+import io.swagger.petstore.assertions.bad_response.BadResponseAssert;
+import io.swagger.petstore.assertions.user.UserModelAssert;
+import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.user.UserModel;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
@@ -38,6 +42,7 @@ public class UserDataGenerator {
         return RandomUtils.nextInt(0,9);
     }
 
+    @Step("Generate user with all parameters")
     public UserModel userModelGenerator() {
 
         UserModel userModel = new UserModel();
@@ -51,5 +56,15 @@ public class UserDataGenerator {
         userModel.setUserStatus(generateUserStatus());
 
         return userModel;
+    }
+
+    @Step("Check expected and actual result")
+    public void checkResultUserModel(UserModel actualResponse, UserModel expectedResult) {
+        UserModelAssert.assertThat(actualResponse).isEqualTo(expectedResult);
+    }
+
+    @Step("Check expected and actual result")
+    public void checkErrorResponse(BadResponse actualResult, BadResponse expectedResult) {
+        BadResponseAssert.assertThat(actualResult).isEqualToComparingFieldByField(expectedResult);
     }
 }

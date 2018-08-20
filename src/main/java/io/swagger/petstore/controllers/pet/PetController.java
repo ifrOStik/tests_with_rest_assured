@@ -26,7 +26,7 @@ public class PetController {
                 .log(LogDetail.ALL).build();
     }
 
-    @Step("Add pet in the shop")
+    @Step("Request : Add pet in the shop")
     public PetModel addNewPet(PetModel pet) {
          return given(requestSpecification)
                  .body(pet)
@@ -39,7 +39,7 @@ public class PetController {
                  .extract().response().as(PetModel.class);
     }
 
-    @Step("Delete pet from the shop")
+    @Step("Request : Delete pet from the shop")
     public void deletePet(PetModel pet) {
         Response response = given(requestSpecification)
                 .when()
@@ -56,7 +56,7 @@ public class PetController {
         }
     }
 
-    @Step("Update pet in the shop")
+    @Step("Request : Update pet in the shop")
     public PetModel updatePet(PetModel pet) {
         return given(requestSpecification)
                 .body(pet)
@@ -68,7 +68,7 @@ public class PetController {
                 .extract().response().as(PetModel.class);
     }
 
-    @Step("Update pet with ID")
+    @Step("Request : Update pet with ID")
     public void updatePetById(PetModel pet) {
         given(requestSpecification)
                 .body(pet)
@@ -78,7 +78,7 @@ public class PetController {
                 .contentType(ContentType.JSON);
     }
 
-    @Step("Get pet from the shop")
+    @Step("Request : Get pet from the shop")
     public Object getPetById(PetModel pet) {
         Response response = given(requestSpecification)
                 .get(String.valueOf(pet.getId()));
@@ -93,7 +93,7 @@ public class PetController {
         }
     }
 
-    @Step("Get pet in the status")
+    @Step("Request : Get pet in the status")
     public void getPetByStatus(PetStatus petStatus) {
        given(requestSpecification)
                .get("findByStatus?status=" + petStatus.toString())

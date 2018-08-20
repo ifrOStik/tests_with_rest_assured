@@ -19,8 +19,8 @@ import org.junit.experimental.categories.Category;
 public class AddOrderTest extends OrderDataGenerator {
 
     @Test
-    @DisplayName("Test : Create pet order")
-    @Description("Create order and check that response order equals created order")
+    @DisplayName("Test : Create order")
+    @Description("Create order and check that response order is equals created order")
     public void addNewOrder() {
 
         OrderModel order = orderModelGeneratorWithPet();
