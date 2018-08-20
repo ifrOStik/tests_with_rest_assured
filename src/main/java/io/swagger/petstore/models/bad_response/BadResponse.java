@@ -1,43 +1,61 @@
 package io.swagger.petstore.models.bad_response;
 
-/**
- * Created by temaustimcik on 2018-07-26.
- */
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.annotation.Generated;
+
+@Generated("com.robohorse.robopojogenerator")
 public class BadResponse {
 
-    private Integer code;
-    private String type, message;
+    @JsonProperty("code")
+    private int code;
 
-    public BadResponse(Integer code, String type, String message) {
+    @JsonProperty("type")
+    private String type;
+
+    @JsonProperty("message")
+    private String message;
+
+    public void setCode(int code){
         this.code = code;
+    }
+
+    public int getCode(){
+        return code;
+    }
+
+    public void setType(String type){
         this.type = type;
+    }
+
+    public String getType(){
+        return type;
+    }
+
+    public void setMessage(String message){
         this.message = message;
+    }
+
+    public String getMessage(){
+        return message;
     }
 
     public BadResponse() {
     }
 
-    public Integer getCode() {
-        return code;
-    }
-
-    public void setCode(Integer code) {
+    public BadResponse(int code, String type, String message) {
         this.code = code;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
         this.type = type;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
         this.message = message;
+    }
+
+    @Override
+    public String toString(){
+        return
+            "Response{" +
+            "code = '" + code + '\'' +
+            ",type = '" + type + '\'' +
+            ",message = '" + message + '\'' +
+            "}";
     }
 }
