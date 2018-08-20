@@ -1,5 +1,6 @@
 package io.swagger.petstore.controllers.order;
 
+import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
@@ -26,6 +27,7 @@ public class OrderController {
                 .log(LogDetail.ALL).build();
     }
 
+    @Step("Add order in the shop")
     public OrderModel addOrder(OrderModel order) {
         return given(requestSpecification)
                 .body(order)
@@ -37,6 +39,7 @@ public class OrderController {
                 .and().extract().response().as(OrderModel.class);
     }
 
+    @Step("Send request with invalid data")
     public BadResponse addOrderInvalidInput() {
 
         RestAssured.requestSpecification = new RequestSpecBuilder()
@@ -61,6 +64,7 @@ public class OrderController {
                 .and().extract().response().as(BadResponse.class);
     }
 
+    @Step("Get order from the shop")
     public Object getOrder(OrderModel order) {
         Response response = given(requestSpecification)
                 .get(String.valueOf(order.getId()));
@@ -76,6 +80,7 @@ public class OrderController {
         }
     }
 
+    @Step("Delete order from the shop")
     public void deleteOrder(OrderModel order) {
         Response response = given(requestSpecification)
                 .delete(String.valueOf(order.getId()));
@@ -92,6 +97,7 @@ public class OrderController {
         }
     }
 
+    @Step("Get inventory list from the shop")
     public void getListInventory() {
         RestAssured.requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(StaticPath.BASE_URI)

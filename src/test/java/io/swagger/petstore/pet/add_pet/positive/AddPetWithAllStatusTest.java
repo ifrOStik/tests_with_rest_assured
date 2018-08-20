@@ -13,8 +13,8 @@ import org.junit.experimental.categories.Category;
 
 @Category({PositiveCategory.class, PetTestsCategory.class})
 @Feature("Pet tests : Positive")
-@Story("Create pets with another status")
-@DisplayName("Create pets with another status")
+@Story("Create pets with all status")
+@DisplayName("Create pets with all status")
 public class AddPetWithAllStatusTest extends PetDataGenerator {
 
     @Test

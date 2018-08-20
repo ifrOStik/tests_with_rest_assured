@@ -1,6 +1,10 @@
 package io.swagger.petstore.order;
 
+import io.qameta.allure.Step;
+import io.swagger.petstore.assertions.bad_response.BadResponseAssert;
+import io.swagger.petstore.assertions.order.OrderModelAssert;
 import io.swagger.petstore.controllers.pet.PetController;
+import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.order.OrderModel;
 import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.utils.OrderStatus;
@@ -44,6 +48,7 @@ public class OrderDataGenerator {
         return randomComplete = random.nextBoolean();
     }
 
+    @Step("Generate order without pet")
     public OrderModel orderModelGenerator(int petId) {
 
         OrderModel order = new OrderModel();
@@ -56,6 +61,7 @@ public class OrderDataGenerator {
         return order;
     }
 
+    @Step("Generate order without pet")
     public OrderModel orderModelGenerator(int petId, OrderStatus orderStatus, boolean statusComplete) {
 
         OrderModel order = new OrderModel();
@@ -68,6 +74,7 @@ public class OrderDataGenerator {
         return order;
     }
 
+    @Step("Generate order with pet")
     public OrderModel orderModelGeneratorWithPet() {
 
         PetModel petModel = new PetModel();
@@ -81,6 +88,7 @@ public class OrderDataGenerator {
 
     }
 
+    @Step("Generate order with primary parameters")
     public OrderModel orderModelGenerator(OrderStatus orderStatus) {
 
         PetModel petModel = new PetModel();
@@ -96,5 +104,15 @@ public class OrderDataGenerator {
         order.setComplete(statusCompleteGenerator());
 
         return order;
+    }
+
+    @Step("Check expected and actual result")
+    public void checkResultOrderModel(OrderModel actualResponse, OrderModel expectedResult) {
+        OrderModelAssert.assertThat(actualResponse).isEqualTo(expectedResult);
+    }
+
+    @Step("Check expected and actual result")
+    public void checkErrorResponse(BadResponse actualResult, BadResponse expectedResult) {
+        BadResponseAssert.assertThat(actualResult).isEqualToComparingFieldByField(expectedResult);
     }
 }
