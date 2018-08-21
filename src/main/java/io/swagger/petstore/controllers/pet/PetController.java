@@ -100,6 +100,28 @@ public class PetController {
                 .contentType(ContentType.JSON);
     }
 
+    @Step("Request : Bad input body for Update pet by ID")
+    public BadResponse updateByIdBadRequest(PetModel pet) {
+        return given(requestSpecification)
+                .body(pet.getName())
+                .post()
+                .then()
+                .statusCode(400)
+                .and()
+                .extract().response().as(BadResponse.class);
+    }
+
+    @Step("Request : Validation exception request for Update pet")
+    public BadResponse updateByIdValidationRequest(PetModel pet) {
+        return given(requestSpecification)
+                .body(pet)
+                .post(pet.getName())
+                .then()
+                .statusCode(415)
+                .and()
+                .extract().response().as(BadResponse.class);
+    }
+
     @Step("Request : Get pet from the shop")
     public Object getPetById(PetModel pet) {
         Response response = given(requestSpecification)
