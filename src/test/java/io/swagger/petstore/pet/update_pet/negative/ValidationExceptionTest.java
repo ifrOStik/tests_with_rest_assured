@@ -12,6 +12,7 @@ import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.pet.PetDataGenerator;
 import io.swagger.petstore.utils.PetStatus;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -22,6 +23,7 @@ import org.junit.experimental.categories.Category;
 public class ValidationExceptionTest extends PetDataGenerator{
 
     @Test
+    @Ignore
     @DisplayName("Test : Validation exception")
     @Description("Validation exception fot update pet and check that response will be 405 error")
     public void test() {
