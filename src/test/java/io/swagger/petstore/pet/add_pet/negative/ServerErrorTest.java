@@ -23,7 +23,7 @@ public class ServerErrorTest extends PetDataGenerator {
     @Description("Sending a invalid request, check expected result 500 error")
     public void serverErrorTest() {
 
-        BadResponse actualResponse = new PetController().serverErrorRequest();
+        BadResponse actualResponse = new PetController().serverErrorRequestAddPet();
         BadResponse expectedResponse = new BadResponse(500, "unknown", "something bad happened");
 
         checkErrorResponse(actualResponse, expectedResponse);

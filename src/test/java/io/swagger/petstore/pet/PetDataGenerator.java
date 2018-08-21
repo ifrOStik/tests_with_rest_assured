@@ -77,4 +77,9 @@ public class PetDataGenerator {
     public void checkErrorResponse(BadResponse actualResult, BadResponse expectedResult) {
         BadResponseAssert.assertThat(actualResult).isEqualToComparingFieldByField(expectedResult);
     }
+
+    @Step("Check expected and actual result")
+    public void checkResultPetModelRecursively(PetModel actualResponse, PetModel expectedResult) {
+        PetModelAssert.assertThat(actualResponse).isEqualToComparingFieldByFieldRecursively(expectedResult);
+    }
 }

@@ -68,6 +68,28 @@ public class PetController {
                 .extract().response().as(PetModel.class);
     }
 
+    @Step("Request : Bad input body for Update pet")
+    public BadResponse updateBadRequest(PetModel pet) {
+        return given(requestSpecification)
+                .body(pet.getName())
+                .put()
+                .then()
+                .statusCode(400)
+                .and()
+                .extract().response().as(BadResponse.class);
+    }
+
+    @Step("Request : Validation exception request for Update pet")
+    public BadResponse updateValidationRequest(PetModel pet) {
+        return given(requestSpecification)
+                .body(pet)
+                .put(pet.getName())
+                .then()
+                .statusCode(405)
+                .and()
+                .extract().response().as(BadResponse.class);
+    }
+
     @Step("Request : Update pet with ID")
     public void updatePetById(PetModel pet) {
         given(requestSpecification)
@@ -103,14 +125,9 @@ public class PetController {
     }
 
     @Step("Send request without field Status")
-    public BadResponse badRequest() {
+    public BadResponse badRequestAddPet(PetModel pet) {
         return given(requestSpecification)
-                .body("{\n" +
-                        " \"id\": " + 1111 + ",\n" +
-                        " \"name\": \"testName\",\n" +
-                        " \"photoUrls\": [4234234],\n" +
-                        " \"tags\": [],\n" +
-                        "}")
+                .body(pet.getName())
                 .post()
                 .then()
                 .statusCode(400)
@@ -119,7 +136,7 @@ public class PetController {
     }
 
     @Step("Send request with invalid data")
-    public BadResponse serverErrorRequest() {
+    public BadResponse serverErrorRequestAddPet() {
         return given(requestSpecification)
                 .body("{\n" +
                         " \"id\": " + 1111 + ",\n" +

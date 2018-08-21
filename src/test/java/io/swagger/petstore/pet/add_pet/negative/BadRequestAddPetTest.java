@@ -9,7 +9,9 @@ import io.swagger.petstore.category.NegativeCategory;
 import io.swagger.petstore.category.PetTestsCategory;
 import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.bad_response.BadResponse;
+import io.swagger.petstore.models.pet.PetModel;
 import io.swagger.petstore.pet.PetDataGenerator;
+import io.swagger.petstore.utils.PetStatus;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -24,7 +26,9 @@ public class BadRequestAddPetTest extends PetDataGenerator{
     @Description("Sending a invalid request, check expected result the 400 error")
     public void badRequestTest() {
 
-        BadResponse actualResponse = new  PetController().badRequest();
+        PetModel pet = petModelRandomGenerator(PetStatus.available);
+
+        BadResponse actualResponse = new  PetController().badRequestAddPet(pet);
         BadResponse expectedResponse = new BadResponse(400, "unknown", "bad input");
 
         checkErrorResponse(actualResponse, expectedResponse);
