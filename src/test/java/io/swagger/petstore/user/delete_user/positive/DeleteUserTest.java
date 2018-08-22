@@ -25,12 +25,13 @@ public class DeleteUserTest extends UserDataGenerator {
     public void deleteUserTest() {
 
         UserModel user = userModelGenerator();
+        String userName = user.getUsername();
 
         UserController userController = new UserController();
         userController.addUser(user);
-        userController.deleteUser(user);
+        userController.deleteUser(userName);
 
-        BadResponse actualUserResponse = (BadResponse) userController.getUser(user);
+        BadResponse actualUserResponse = (BadResponse) userController.getUser(userName);
         BadResponse expectedResponse = new BadResponse(1, "error", "User not found");
 
         checkErrorResponse(actualUserResponse, expectedResponse);

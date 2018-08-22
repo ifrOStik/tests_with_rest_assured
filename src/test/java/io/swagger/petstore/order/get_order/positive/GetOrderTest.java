@@ -28,7 +28,7 @@ public class GetOrderTest extends OrderDataGenerator {
         OrderController orderController = new OrderController();
         orderController.addOrder(order);
 
-        OrderModel actualOrderResponse = (OrderModel) orderController.getOrder(order);
+        OrderModel actualOrderResponse = (OrderModel) orderController.getOrder(String.valueOf(order.getId()));
 
         checkResultOrderModel(actualOrderResponse, order);
     }

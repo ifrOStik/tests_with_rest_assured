@@ -28,7 +28,7 @@ public class GetUserTest extends UserDataGenerator {
         UserController userController = new UserController();
         userController.addUser(user);
 
-        UserModel actualUserResponse = (UserModel) userController.getUser(user);
+        UserModel actualUserResponse = (UserModel) userController.getUser(user.getUsername());
 
         checkResultUserModel(actualUserResponse, user);
     }

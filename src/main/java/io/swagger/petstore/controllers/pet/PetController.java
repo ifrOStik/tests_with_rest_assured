@@ -40,10 +40,10 @@ public class PetController {
     }
 
     @Step("Request : Delete pet from the shop")
-    public void deletePet(PetModel pet) {
+    public void deletePet(String petId) {
         Response response = given(requestSpecification)
                 .when()
-                .delete(String.valueOf(pet.getId()));
+                .delete(petId);
 
         if (response.statusCode() == 200) {
             response.then()
@@ -123,9 +123,9 @@ public class PetController {
     }
 
     @Step("Request : Get pet from the shop")
-    public Object getPetById(PetModel pet) {
+    public Object getPetById(String petId) {
         Response response = given(requestSpecification)
-                .get(String.valueOf(pet.getId()));
+                .get(petId);
         if (response.statusCode() == 200) {
             return response.then()
                     .contentType(ContentType.JSON)

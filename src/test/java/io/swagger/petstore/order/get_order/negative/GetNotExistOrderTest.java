@@ -28,7 +28,7 @@ public class GetNotExistOrderTest extends OrderDataGenerator {
 
         OrderController orderController = new OrderController();
 
-        BadResponse actualOrderResponse = (BadResponse) orderController.getOrder(order);
+        BadResponse actualOrderResponse = (BadResponse) orderController.getOrder(String.valueOf(order.getId()));
         BadResponse expectedResponse = new BadResponse(1, "error", "Order not found");
 
         checkErrorResponse(actualOrderResponse, expectedResponse);

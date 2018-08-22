@@ -12,6 +12,7 @@ import io.swagger.petstore.models.user.UserModel;
 import io.swagger.petstore.utils.StaticPath;
 
 
+import javax.xml.soap.SAAJResult;
 import java.util.ArrayList;
 
 import static io.restassured.RestAssured.given;
@@ -77,10 +78,10 @@ public class UserController {
     }
 
     @Step("Request : Get user")
-    public Object getUser(UserModel user) {
+    public Object getUser(String userName) {
         Response response = given(requestSpecification)
                 .when()
-                .get(user.getUsername());
+                .get(userName);
 
         if (response.statusCode() == 200) {
             return response.then()
@@ -96,10 +97,10 @@ public class UserController {
     }
 
     @Step("Request : Login in the system")
-    public void loginUser(UserModel user) {
+    public void loginUser(String userName, String userPassword) {
         given(requestSpecification)
                 .when()
-                .get("login?username=" +  user.getUsername() + "&password=" + user.getPassword())
+                .get("login?username=" +  userName + "&password=" + userPassword)
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
@@ -129,10 +130,10 @@ public class UserController {
     }
 
     @Step("Request : Delete user")
-    public void deleteUser(UserModel user) {
+    public void deleteUser(String userName) {
         Response response = given(requestSpecification)
                 .when()
-                .delete(user.getUsername());
+                .delete(userName);
 
         if (response.statusCode() == 200) {
             response.then()

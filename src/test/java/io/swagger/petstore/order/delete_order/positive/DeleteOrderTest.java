@@ -25,12 +25,13 @@ public class DeleteOrderTest extends OrderDataGenerator {
     public void deleteOrderTest() {
 
         OrderModel order = orderModelGeneratorWithPet();
+        String orderId = String.valueOf(order.getId());
 
         OrderController orderController = new OrderController();
         orderController.addOrder(order);
-        orderController.deleteOrder(order);
+        orderController.deleteOrder(orderId);
 
-        BadResponse actualOrderResponse = (BadResponse) orderController.getOrder(order);
+        BadResponse actualOrderResponse = (BadResponse) orderController.getOrder(orderId);
         BadResponse expectedResponse = new BadResponse(1, "error", "Order not found");
 
         checkErrorResponse(actualOrderResponse, expectedResponse);

@@ -34,7 +34,7 @@ public class UpdateUserTest extends UserDataGenerator {
 
         userController.updateUser(user);
 
-        UserModel actualUserResponse = (UserModel) userController.getUser(user);
+        UserModel actualUserResponse = (UserModel) userController.getUser(user.getUsername());
 
         checkResultUserModel(actualUserResponse, user);
     }

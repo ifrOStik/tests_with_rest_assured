@@ -37,9 +37,9 @@ public class CreateUsersListTest extends UserDataGenerator {
         UserController userController = new UserController();
         userController.addUsersList(userModelArrayList);
 
-        UserModel actualUser1Response = (UserModel) userController.getUser(user1);
-        UserModel actualUser2Response = (UserModel) userController.getUser(user2);
-        UserModel actualUser3Response = (UserModel) userController.getUser(user3);
+        UserModel actualUser1Response = (UserModel) userController.getUser(user1.getUsername());
+        UserModel actualUser2Response = (UserModel) userController.getUser(user2.getUsername());
+        UserModel actualUser3Response = (UserModel) userController.getUser(user3.getUsername());
 
         checkResultUserModel(actualUser1Response, user1);
         checkResultUserModel(actualUser2Response, user2);

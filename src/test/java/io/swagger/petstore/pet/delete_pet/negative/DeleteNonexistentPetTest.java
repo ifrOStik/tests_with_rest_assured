@@ -28,6 +28,6 @@ public class DeleteNonexistentPetTest extends PetDataGenerator {
         PetModel pet = petModelRandomGenerator(PetStatus.available);
 
         PetController petController = new PetController();
-        petController.deletePet(pet);
+        petController.deletePet(String.valueOf(pet.getId()));
     }
 }

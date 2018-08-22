@@ -28,7 +28,7 @@ public class GetNotExistUserTest extends UserDataGenerator {
 
         UserController userController = new UserController();
 
-        BadResponse actualUserResponse = (BadResponse) userController.getUser(user);
+        BadResponse actualUserResponse = (BadResponse) userController.getUser(user.getUsername());
         BadResponse expectedResponse = new BadResponse(1, "error", "User not found");
 
         checkErrorResponse(actualUserResponse, expectedResponse);

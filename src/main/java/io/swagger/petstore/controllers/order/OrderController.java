@@ -65,9 +65,9 @@ public class OrderController {
     }
 
     @Step("Request : Get order from the shop")
-    public Object getOrder(OrderModel order) {
+    public Object getOrder(String orderId) {
         Response response = given(requestSpecification)
-                .get(String.valueOf(order.getId()));
+                .get(orderId);
 
         if (response.statusCode() == 200) {
             return response.then()
@@ -81,9 +81,9 @@ public class OrderController {
     }
 
     @Step("Request : Delete order from the shop")
-    public void deleteOrder(OrderModel order) {
+    public void deleteOrder(String orderId) {
         Response response = given(requestSpecification)
-                .delete(String.valueOf(order.getId()));
+                .delete(orderId);
 
         if (response.statusCode() == 200) {
             response.then()

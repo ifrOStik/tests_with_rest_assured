@@ -26,12 +26,13 @@ public class DeletePetTest extends PetDataGenerator {
     public void deleteTest() {
 
         PetModel pet = petModelRandomGenerator(PetStatus.available);
+        String petId = String.valueOf(pet.getId());
 
         PetController petController = new PetController();
         petController.addNewPet(pet);
-        petController.deletePet(pet);
+        petController.deletePet(petId);
 
-        BadResponse petActualResponse = (BadResponse) petController.getPetById(pet);
+        BadResponse petActualResponse = (BadResponse) petController.getPetById(petId);
 
         BadResponse expectedResponse = new BadResponse(1, "error", "Pet not found");
 

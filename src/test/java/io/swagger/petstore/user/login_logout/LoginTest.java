@@ -28,6 +28,6 @@ public class LoginTest extends UserDataGenerator {
             UserController userController = new UserController();
             userController.addUser(user);
 
-            userController.loginUser(user);
+            userController.loginUser(user.getUsername(), user.getPassword());
         }
 }

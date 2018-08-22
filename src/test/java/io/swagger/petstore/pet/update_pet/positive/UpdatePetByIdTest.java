@@ -36,7 +36,7 @@ public class UpdatePetByIdTest extends PetDataGenerator {
 
         petController.updatePetById(pet);
 
-        PetModel petActualResponse = (PetModel) petController.getPetById(pet);
+        PetModel petActualResponse = (PetModel) petController.getPetById(String.valueOf(pet.getId()));
         checkResultPetModel(petActualResponse, pet);
     }
 }
