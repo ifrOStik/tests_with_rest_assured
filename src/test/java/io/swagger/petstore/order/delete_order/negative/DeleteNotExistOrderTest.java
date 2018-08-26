@@ -4,6 +4,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
+import io.restassured.response.ResponseBody;
 import io.swagger.petstore.category.NegativeCategory;
 import io.swagger.petstore.category.OrderTestsCategory;
 import io.swagger.petstore.controllers.order.OrderController;
@@ -26,6 +27,9 @@ public class DeleteNotExistOrderTest extends OrderDataGenerator {
         OrderModel order = orderModelGeneratorWithPet();
 
         OrderController orderController = new OrderController();
-        orderController.deleteOrder(String.valueOf(order.getId()));
+        ResponseBody actualResponse = orderController.deleteOrder(String.valueOf(order.getId()));
+        String expectedResponse = "Order not found";
+
+        checkNotExistOrderResponse(actualResponse, expectedResponse);
     }
 }

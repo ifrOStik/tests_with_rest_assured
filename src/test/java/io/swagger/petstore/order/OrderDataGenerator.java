@@ -1,6 +1,7 @@
 package io.swagger.petstore.order;
 
 import io.qameta.allure.Step;
+import io.restassured.response.ResponseBody;
 import io.swagger.petstore.assertions.bad_response.BadResponseAssert;
 import io.swagger.petstore.assertions.order.OrderModelAssert;
 import io.swagger.petstore.controllers.pet.PetController;
@@ -11,6 +12,7 @@ import io.swagger.petstore.utils.OrderStatus;
 import io.swagger.petstore.utils.PetStatus;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
+import org.junit.Assert;
 
 import java.util.Random;
 
@@ -117,5 +119,10 @@ public class OrderDataGenerator {
     @Step("Check expected and actual result")
     public void checkErrorResponse(BadResponse actualResult, BadResponse expectedResult) {
         BadResponseAssert.assertThat(actualResult).isEqualToComparingFieldByField(expectedResult);
+    }
+
+    @Step("Check expected and actual result")
+    public void checkNotExistOrderResponse(ResponseBody actualResponse, String expectedResponse) {
+        Assert.assertEquals(expectedResponse, actualResponse.prettyPrint());
     }
 }

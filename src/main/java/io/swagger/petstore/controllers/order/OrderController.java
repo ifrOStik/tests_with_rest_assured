@@ -6,6 +6,7 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import io.swagger.petstore.models.bad_response.BadResponse;
 import io.swagger.petstore.models.order.OrderModel;
@@ -81,19 +82,19 @@ public class OrderController {
     }
 
     @Step("Request : Delete order from the shop")
-    public void deleteOrder(String orderId) {
+    public ResponseBody deleteOrder(String orderId) {
         Response response = given(requestSpecification)
                 .delete(orderId);
 
         if (response.statusCode() == 200) {
-            response.then()
+           return response.then()
                     .contentType(ContentType.JSON)
-                    .and().extract().response().prettyPrint();
+                    .and().extract().response();
         } else {
-            response.then()
+          return response.then()
                     .statusCode(404)
                     .contentType(ContentType.JSON)
-                    .and().extract().response().body().equals("Order not found");
+                    .and().extract().response();
         }
     }
 
