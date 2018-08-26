@@ -99,7 +99,7 @@ public class OrderController {
     }
 
     @Step("Request : Get inventory list from the shop")
-    public void getListInventory() {
+    public String getListInventory() {
         RestAssured.requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(StaticPath.BASE_URI)
                 .setBasePath("/v2/store/inventory")
@@ -107,7 +107,7 @@ public class OrderController {
                 .addHeader(StaticPath.headerName, StaticPath.headerValue)
                 .log(LogDetail.ALL).build();
 
-        given()
+        return given()
                 .when()
                 .get()
                 .then()

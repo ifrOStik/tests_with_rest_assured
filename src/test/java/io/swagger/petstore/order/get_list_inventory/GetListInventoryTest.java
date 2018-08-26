@@ -2,6 +2,7 @@ package io.swagger.petstore.order.get_list_inventory;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import io.swagger.petstore.category.OrderTestsCategory;
@@ -21,6 +22,12 @@ public class GetListInventoryTest {
     @Description("Get inventory list and check that status code will be 200")
     public void getListInventory() {
 
-        new OrderController().getListInventory();
+        String response = new OrderController().getListInventory();
+        printResponse(response);
+    }
+
+    @Step("Print list inventory response")
+    private void printResponse(String response) {
+        System.out.println(response);
     }
 }

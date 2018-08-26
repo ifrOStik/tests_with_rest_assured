@@ -2,6 +2,7 @@ package io.swagger.petstore.user.login_logout;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
 import io.swagger.petstore.category.PositiveCategory;
@@ -28,6 +29,12 @@ public class LoginTest extends UserDataGenerator {
             UserController userController = new UserController();
             userController.addUser(user);
 
-            userController.loginUser(user.getUsername(), user.getPassword());
+            String response = userController.loginUser(user.getUsername(), user.getPassword());
+            printResponse(response);
+        }
+
+        @Step("Print response log")
+        private void printResponse(String response) {
+            System.out.println(response);
         }
 }

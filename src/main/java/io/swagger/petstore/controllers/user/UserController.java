@@ -97,8 +97,8 @@ public class UserController {
     }
 
     @Step("Request : Login in the system")
-    public void loginUser(String userName, String userPassword) {
-        given(requestSpecification)
+    public String loginUser(String userName, String userPassword) {
+       return given(requestSpecification)
                 .when()
                 .get("login?username=" +  userName + "&password=" + userPassword)
                 .then()
