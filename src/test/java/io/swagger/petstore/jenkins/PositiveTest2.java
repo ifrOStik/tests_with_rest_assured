@@ -7,6 +7,7 @@ import io.qameta.allure.junit4.DisplayName;
 import io.swagger.petstore.category.JenkinsCategory;
 import io.swagger.petstore.controllers.pet.PetController;
 import io.swagger.petstore.models.pet.PetModel;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -17,6 +18,7 @@ import org.junit.experimental.categories.Category;
 public class PositiveTest2 {
 
     @Test
+    @Ignore
     @DisplayName("Test : Get pet with ID")
     @Description("Get pet with ID and check that response pet object is equal to the created pet")
     public void getPetById() {
