@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ignored tests",
+    "messageRegex": ".*ignored.*",
+    "matchedStatuses": ["skipped"],
+    "flaky": true
+  },
+
+  {
+    "name": "Infrastructure problems",
+    "traceRegex": ".*RuntimeException.*",
+    "matchedStatuses": ["broken", "failed"]
+  },
+
+  {
+    "name": "Assertions tests",
+    "messageRegex": ".*AssertionError.*",
+    "matchedStatuses": ["broken"]
+  },
+
+  {
+    "name": "Passed",
+    "messageRegex": ".*",
+    "matchedStatuses": ["passed"]
+}
+]
