@@ -7,8 +7,8 @@
   },
 
   {
-    "name": "Infrastructure problems",
-    "traceRegex": ".*RuntimeException.*",
+    "name": "Assert problems",
+    "traceRegex": ".*AssertionError.*",
     "matchedStatuses": ["broken", "failed"]
   },
 
