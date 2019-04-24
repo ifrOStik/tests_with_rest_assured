@@ -11,9 +11,9 @@
   “matchedStatuses”: [“broken”, “failed”]
 },
   {
-    “name”: “Outdated tests”,
-  “messageRegex”: “.*FileNotFound.*“,
-  “matchedStatuses”: [“broken”]
+    “name”: “Assertion tests”,
+  “messageRegex”: “.*AssertionError.*,“,
+  “matchedStatuses”: [“failed”]
 },
   {
     “name”: “Passed”,
