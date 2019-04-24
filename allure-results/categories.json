@@ -20,7 +20,6 @@
 
   {
     "name": "Passed",
-    "messageRegex": ".*",
     "matchedStatuses": ["passed"]
   }
 ]
