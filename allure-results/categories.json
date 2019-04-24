@@ -15,12 +15,12 @@
   {
     "name": "Assertions tests",
     "messageRegex": ".*AssertionError.*",
-    "matchedStatuses": ["broken"]
+    "matchedStatuses": ["broken", "failed"]
   },
 
   {
     "name": "Passed",
     "messageRegex": ".*",
     "matchedStatuses": ["passed"]
-}
+  }
 ]
