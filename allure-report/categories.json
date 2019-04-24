@@ -15,7 +15,7 @@
   {
     “name”: “Assertion tests”,
     “messageRegex”: “.*AssertionError.*,“,
-    “matchedStatuses”: [“broken”]
+    “matchedStatuses”: [“failed”]
   },
 
   {
